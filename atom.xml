@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[functional.js]]></title>
+  <subtitle><![CDATA[functional.js is a functional JavaScript library]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://functionaljs.com/"/>
+  <updated>2014-06-24T09:33:22.823Z</updated>
+  <id>http://functionaljs.com/</id>
+  
+  <author>
+    <name><![CDATA[Lee Crossley]]></name>
+    <email><![CDATA[leee@hotmail.co.uk]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+</feed>
