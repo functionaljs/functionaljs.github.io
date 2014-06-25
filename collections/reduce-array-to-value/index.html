@@ -74,11 +74,18 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-reduce"><span class="toc-number">1.</span> <span class="toc-text">λ.reduce</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.1.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-reduce"><span class="toc-number">1.</span> <span class="toc-text">λ.reduce</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <h2 id="λ-reduce">λ.reduce</h2>
-<p>λ.reduce applies an iterator function against an internal accumulator and all items in the list are reduced it to a single value. Similar to the native Array.prototype.reduce() available in ES5 but does not use any native functions and supports currying by default.</p>
+<ul>
+<li><em>Alias:</em> λ.reducel</li>
+</ul>
+<p>λ.reduce applies an iterator function against an internal accumulator object and all items in the list are reduced to a single value. Similar to the native Array.prototype.reduce() available in ES5 but does not use any native functions and supports currying by default (as well as working in older browsers)</p>
+<h3 id="Usage">Usage</h3>
+<figure class="highlight js"><pre>λ.reduce(iterator, initial, items);
+</pre></figure>
+
 <h3 id="Example">Example</h3>
 <figure class="highlight js"><pre><span class="keyword">var</span> items = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];
 
@@ -100,7 +107,7 @@ multiplyReduceFrom1(items);
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T11:26:32.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
+        <time id="page-footer-updated" datetime="2014-06-25T11:34:34.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
         <a href="/collections/map-items-in-array/" id="page-footer-prev" title="λ.map">Prev</a>
       </footer>
       
