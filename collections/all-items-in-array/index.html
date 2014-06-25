@@ -87,22 +87,23 @@
 </pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> items = [<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>];
-
-<span class="keyword">var</span> even = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
+<figure class="highlight js"><pre><span class="keyword">var</span> even = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
     <span class="keyword">return</span> item % <span class="number">2</span> === <span class="number">0</span>;
 };
 <span class="keyword">var</span> odd = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
     <span class="keyword">return</span> item % <span class="number">2</span> !== <span class="number">0</span>;
 };
 
-λ.every(even); <span class="comment">// =&gt; true</span>
-λ.every(odd); <span class="comment">// =&gt; false</span>
+<span class="keyword">var</span> everyEven = λ.every(even);
+<span class="keyword">var</span> everyOdd = λ.every(odd);
+
+everyEven([<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>]); <span class="comment">// =&gt; true</span>
+everyOdd([<span class="number">1</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">9</span>]); <span class="comment">// =&gt; false</span>
 </pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T11:49:04.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
+        <time id="page-footer-updated" datetime="2014-06-25T12:05:42.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
         <a href="/collections/reduce-array-to-value/" id="page-footer-prev" title="λ.reduce">Prev</a><a href="/collections/does-array-contain/" id="page-footer-next" title="λ.any">Next</a>
       </footer>
       
