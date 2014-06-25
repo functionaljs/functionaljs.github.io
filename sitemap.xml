@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://functionaljs.com/the-basics/extending-arity/</loc>
+    <lastmod>2014-06-25T10:35:29.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/the-basics/currying-functions/</loc>
-    <lastmod>2014-06-25T10:12:50.000Z</lastmod>
+    <lastmod>2014-06-25T10:31:18.000Z</lastmod>
   </url>
   
   <url>

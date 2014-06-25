@@ -31,7 +31,6 @@
 <meta name="twitter:title" content="Function currying with λ.curry">
 <meta name="twitter:description" content="Examples of currying JavaScript functions to create higher order functions for reuse.">
 <meta name="twitter:site" content="@lee_crossley">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
@@ -81,35 +80,35 @@
         <h2 id="Currying">Currying</h2>
 <p>λ.curry allows you to easily higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.</p>
 <h3 id="Basic_example">Basic example</h3>
-<figure class="highlight bash"><pre>var concatenate = λ.curry(function(word1, word2) {
+<figure class="highlight js"><pre><span class="keyword">var</span> concatenate = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(word1, word2)</span> {</span>
     <span class="keyword">return</span> word1 + <span class="string">" "</span> + word2;
 });
 
-var concatenateHello = concatenate(<span class="string">"Hello"</span>);
+<span class="keyword">var</span> concatenateHello = concatenate(<span class="string">"Hello"</span>);
 
 concatenateHello(<span class="string">"World"</span>);
-// =&gt; <span class="string">"Hello World"</span>
+<span class="comment">// =&gt; "Hello World"</span>
 </pre></figure>
 
 <p>The “concatenateHello” function is a higher order function created by partially invoking the “concatenate” function with the first argument. “concatenateHello” can then be reused.</p>
 <h3 id="Another_example">Another example</h3>
-<figure class="highlight bash"><pre>var add = λ.curry(function(arg1, arg2, arg3) {
+<figure class="highlight js"><pre><span class="keyword">var</span> add = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(arg1, arg2, arg3)</span> {</span>
     <span class="keyword">return</span> arg1 + arg2 + arg3;
 });
 
-var add3 = add(<span class="number">3</span>);
-var add5 = add3(<span class="number">2</span>);
+<span class="keyword">var</span> add3 = add(<span class="number">3</span>);
+<span class="keyword">var</span> add5 = add3(<span class="number">2</span>);
 
-add(<span class="number">3</span>)(<span class="number">2</span>)(<span class="number">1</span>); // =&gt; <span class="number">6</span>
-add3(<span class="number">2</span>, <span class="number">1</span>); // =&gt; <span class="number">6</span>
-add3(<span class="number">2</span>)(<span class="number">1</span>); // =&gt; <span class="number">6</span>
-add5(<span class="number">1</span>); // =&gt; <span class="number">6</span>
+add(<span class="number">3</span>)(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span>
+add3(<span class="number">2</span>, <span class="number">1</span>); <span class="comment">// =&gt; 6</span>
+add3(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span>
+add5(<span class="number">1</span>); <span class="comment">// =&gt; 6</span>
 </pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T10:12:50.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
-        <a href="/getting-started/installation/" id="page-footer-prev" title="Installation">Prev</a>
+        <time id="page-footer-updated" datetime="2014-06-25T10:31:18.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
+        <a href="/getting-started/installation/" id="page-footer-prev" title="Installation">Prev</a><a href="/the-basics/extending-arity/" id="page-footer-next" title="Extending arity">Next</a>
       </footer>
       
     </div>
@@ -125,6 +124,8 @@ add5(<span class="number">1</span>); // =&gt; <span class="number">6</span>
     <strong class="sidebar-title">The basics</strong>
     
       <a href="/the-basics/currying-functions/" class="sidebar-link current">λ.curry</a>
+    
+      <a href="/the-basics/extending-arity/" class="sidebar-link">Extending arity</a>
     
   
 </aside>

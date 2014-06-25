@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>How to install | functional.js</title>
+  <title>Extending arity with λ.curry | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://functionaljs.com/getting-started/installation/">
+  <link rel="canonical" href="http://functionaljs.com/the-basics/extending-arity/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
@@ -21,15 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="functional.js works in the browser and with node.js, there are several options for installation.">
+  <meta name="description" content="Examples of extending JavaScript function arity with λ.curry.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to install">
-<meta property="og:url" content="http://functionaljs.com/getting-started/installation/index.html">
+<meta property="og:title" content="Extending arity with λ.curry">
+<meta property="og:url" content="http://functionaljs.com/the-basics/extending-arity/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="functional.js works in the browser and with node.js, there are several options for installation.">
+<meta property="og:description" content="Examples of extending JavaScript function arity with λ.curry.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to install">
-<meta name="twitter:description" content="functional.js works in the browser and with node.js, there are several options for installation.">
+<meta name="twitter:title" content="Extending arity with λ.curry">
+<meta name="twitter:description" content="Examples of extending JavaScript function arity with λ.curry.">
 <meta name="twitter:site" content="@lee_crossley">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">How to install</h1>
+        <h1 id="page-title" itemprop="name">Extending arity with λ.curry</h1>
       </div>
     </div>
   </header>
@@ -74,40 +74,29 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js"><span class="toc-number">1.</span> <span class="toc-text">Node.js</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">1.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Update"><span class="toc-number">1.2.</span> <span class="toc-text">Update</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Client_side"><span class="toc-number">2.</span> <span class="toc-text">Client side</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Source_code"><span class="toc-number">3.</span> <span class="toc-text">Source code</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Arity"><span class="toc-number">1.</span> <span class="toc-text">Arity</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.1.</span> <span class="toc-text">Example</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="Node-js">Node.js</h2>
-<h3 id="Install">Install</h3>
-<p>Install via npm and save the dependency in your package.json:</p>
-<figure class="highlight bash"><pre>npm install functional.js --save
+        <h2 id="Arity">Arity</h2>
+<p>The arity of a JavaScript function is the number of arguments <em>expected</em> by the function. With the λ.curry it is possible to extend this arity beyond the expected length.</p>
+<h3 id="Example">Example</h3>
+<figure class="highlight js"><pre><span class="keyword">var</span> add = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(arg1, arg2)</span> {</span>
+    <span class="keyword">return</span> arg1 + arg2;
+});
+
+<span class="keyword">var</span> add3 = add(<span class="number">3</span>);
+
+add(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// =&gt; 6</span>
+add3(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>); <span class="comment">// =&gt; 18</span>
 </pre></figure>
 
-<p>Then to include functional.min.js in your app:</p>
-<figure class="highlight js"><pre><span class="keyword">var</span> λ = <span class="built_in">require</span>(<span class="string">"functional.js"</span>);
-</pre></figure>
-
-<h3 id="Update">Update</h3>
-<figure class="highlight bash"><pre>npm update functional.js
-</pre></figure>
-
-<h2 id="Client_side">Client side</h2>
-<p>There is no CDN yet, you should download the latest minified version from <a href="http://bit.ly/funcmin" target="_blank" rel="external">here</a> and host it yourself. Once you reference the js file “λ” will become a global variable.</p>
-<blockquote class="note warn"><strong class="note-title">"λ" character issues</strong>
-
-<p>There are possible issues with using the “λ” character client side. There shouldn’t be, but there are. If you experience issues, there is an alternative client version, functional.min.client.js which uses “lambda” instead of “λ”. Download the minified client version <a href="http://bit.ly/funcclient" target="_blank" rel="external">here</a>, reference the js file and lambda will become a global variable.</p>
-</blockquote>
-
-
-<h2 id="Source_code">Source code</h2>
-<p>The source code is available on <a href="https://github.com/leecrossley/functional-js" target="_blank" rel="external">Github</a>, you can clone the repo:</p>
-<figure class="highlight bash"><pre>git clone git@github.com:leecrossley/functional-js.git
-</pre></figure>
+<p>The “add” function can now take any number of arguments (&gt;= the expected arity) and the numbers will be summed. The “add” function can also be curried in the usual way by partial invocation (only supplying one argument, “add3”).</p>
+<p>The higher order function “add3” can also take any number of arguments, beyond the expected arity.</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T09:53:47.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
-        <a href="/" id="page-footer-prev" title="Introduction">Prev</a><a href="/the-basics/currying-functions/" id="page-footer-next" title="λ.curry">Next</a>
+        <time id="page-footer-updated" datetime="2014-06-25T10:35:29.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
+        <a href="/the-basics/currying-functions/" id="page-footer-prev" title="λ.curry">Prev</a>
       </footer>
       
     </div>
@@ -117,14 +106,14 @@
     
       <a href="/" class="sidebar-link">Introduction</a>
     
-      <a href="/getting-started/installation/" class="sidebar-link current">Installation</a>
+      <a href="/getting-started/installation/" class="sidebar-link">Installation</a>
     
   
     <strong class="sidebar-title">The basics</strong>
     
       <a href="/the-basics/currying-functions/" class="sidebar-link">λ.curry</a>
     
-      <a href="/the-basics/extending-arity/" class="sidebar-link">Extending arity</a>
+      <a href="/the-basics/extending-arity/" class="sidebar-link current">Extending arity</a>
     
   
 </aside>
