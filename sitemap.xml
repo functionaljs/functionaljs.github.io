@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://functionaljs.com/collections/reduce-array-to-value/</loc>
+    <lastmod>2014-06-25T11:26:32.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/collections/map-items-in-array/</loc>
     <lastmod>2014-06-25T11:06:10.000Z</lastmod>
   </url>
