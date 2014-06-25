@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>λ.every item in array | functional.js</title>
+  <title>λ.apply function to items | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://functionaljs.com/collections/all-items-in-array/">
+  <link rel="canonical" href="http://functionaljs.com/collections/apply/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
@@ -21,15 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="λ.every tests whether all items in the list pass the test implemented by the iterator function.">
+  <meta name="description" content="λ.apply maps internal function results to a new array.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="λ.every item in array">
-<meta property="og:url" content="http://functionaljs.com/collections/all-items-in-array/index.html">
+<meta property="og:title" content="λ.apply function to items">
+<meta property="og:url" content="http://functionaljs.com/collections/apply/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="λ.every tests whether all items in the list pass the test implemented by the iterator function.">
+<meta property="og:description" content="λ.apply maps internal function results to a new array.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="λ.every item in array">
-<meta name="twitter:description" content="λ.every tests whether all items in the list pass the test implemented by the iterator function.">
+<meta name="twitter:title" content="λ.apply function to items">
+<meta name="twitter:description" content="λ.apply maps internal function results to a new array.">
 <meta name="twitter:site" content="@lee_crossley">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">λ.every item in array</h1>
+        <h1 id="page-title" itemprop="name">λ.apply function to items</h1>
       </div>
     </div>
   </header>
@@ -74,37 +74,33 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-every"><span class="toc-number">1.</span> <span class="toc-text">λ.every</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-apply"><span class="toc-number">1.</span> <span class="toc-text">λ.apply</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic_example"><span class="toc-number">1.2.</span> <span class="toc-text">Basic example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Multiple_argument_example"><span class="toc-number">1.3.</span> <span class="toc-text">Multiple argument example</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="λ-every">λ.every</h2>
-<ul>
-<li><em>Alias:</em> λ.all</li>
-</ul>
-<p>λ.every will return true if all the items in the list return true when passed to the iterator function individually, otherwise it will return false. λ.every be curried by default.</p>
+        <h2 id="λ-apply">λ.apply</h2>
+<p>λ.apply is a special kind of λ.map that applies a function available to all the items in the list and returns a new array with the results.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.every(iterator, items);
+<figure class="highlight js"><pre>λ.apply(functionName, items);
 </pre></figure>
 
-<h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> even = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
-    <span class="keyword">return</span> item % <span class="number">2</span> === <span class="number">0</span>;
-};
-<span class="keyword">var</span> odd = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
-    <span class="keyword">return</span> item % <span class="number">2</span> !== <span class="number">0</span>;
-};
+<h3 id="Basic_example">Basic example</h3>
+<figure class="highlight js"><pre><span class="keyword">var</span> applyCase = λ.apply(<span class="string">"toUpperCase"</span>);
 
-<span class="keyword">var</span> everyEven = λ.every(even);
-<span class="keyword">var</span> everyOdd = λ.every(odd);
+applyCase([<span class="string">"Hello"</span>, <span class="string">"World"</span>]);
+<span class="comment">// =&gt; ["HELLO", "WORLD"]</span>
+</pre></figure>
 
-everyEven([<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>]); <span class="comment">// =&gt; true</span>
-everyOdd([<span class="number">1</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">9</span>]); <span class="comment">// =&gt; false</span>
+<h3 id="Multiple_argument_example">Multiple argument example</h3>
+<figure class="highlight js"><pre><span class="keyword">var</span> applyIndexOf = λ.apply([<span class="string">"substring"</span>, <span class="string">"1"</span>, <span class="string">"4"</span>]);
+
+applyIndexOf([<span class="string">"Hello"</span>, <span class="string">"World"</span>]);
+<span class="comment">// =&gt; ["ell", "orl"];</span>
 </pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T12:05:42.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
-        <a href="/collections/reduce-array-to-value/" id="page-footer-prev" title="λ.reduce">Prev</a><a href="/collections/does-array-contain/" id="page-footer-next" title="λ.any">Next</a>
+        <time id="page-footer-updated" datetime="2014-06-25T13:55:03.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
+        <a href="/collections/reduce/" id="page-footer-prev" title="λ.reduce">Prev</a><a href="/collections/every-all/" id="page-footer-next" title="λ.every">Next</a>
       </footer>
       
     </div>
@@ -114,27 +110,35 @@ everyOdd([<span class="number">1</span>, <span class="number">3</span>, <span cl
     
       <a href="/" class="sidebar-link">Introduction</a>
     
-      <a href="/getting-started/installation/" class="sidebar-link">Installation</a>
+      <a href="/installation/" class="sidebar-link">Installation</a>
     
   
     <strong class="sidebar-title">The basics</strong>
     
-      <a href="/the-basics/currying-functions/" class="sidebar-link">λ.curry</a>
+      <a href="/basics/curry/" class="sidebar-link">λ.curry</a>
     
-      <a href="/the-basics/extending-arity/" class="sidebar-link">Extending arity</a>
+      <a href="/basics/arity/" class="sidebar-link">Extending arity</a>
     
   
     <strong class="sidebar-title">Collections</strong>
     
-      <a href="/collections/iterate-with-each/" class="sidebar-link">λ.each</a>
+      <a href="/collections/each/" class="sidebar-link">λ.each</a>
     
-      <a href="/collections/map-items-in-array/" class="sidebar-link">λ.map</a>
+      <a href="/collections/map/" class="sidebar-link">λ.map</a>
     
-      <a href="/collections/reduce-array-to-value/" class="sidebar-link">λ.reduce</a>
+      <a href="/collections/reduce/" class="sidebar-link">λ.reduce</a>
     
-      <a href="/collections/all-items-in-array/" class="sidebar-link current">λ.every</a>
+      <a href="/collections/apply/" class="sidebar-link current">λ.apply</a>
     
-      <a href="/collections/does-array-contain/" class="sidebar-link">λ.any</a>
+      <a href="/collections/every-all/" class="sidebar-link">λ.every</a>
+    
+      <a href="/collections/any-contains/" class="sidebar-link">λ.any</a>
+    
+      <a href="/collections/select-filter/" class="sidebar-link">λ.select</a>
+    
+      <a href="/collections/pluck/" class="sidebar-link">λ.pluck</a>
+    
+      <a href="/collections/to-array/" class="sidebar-link">λ.toArray</a>
     
   
 </aside>
