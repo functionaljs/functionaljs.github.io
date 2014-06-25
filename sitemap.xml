@@ -2,6 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://functionaljs.com/arrays/partition/</loc>
+    <lastmod>2014-06-25T14:35:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/select-filter/</loc>
+    <lastmod>2014-06-25T14:33:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/arrays/best/</loc>
+    <lastmod>2014-06-25T14:29:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/arrays/last/</loc>
+    <lastmod>2014-06-25T14:21:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/arrays/first/</loc>
+    <lastmod>2014-06-25T14:20:21.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/collections/to-array/</loc>
     <lastmod>2014-06-25T14:09:05.000Z</lastmod>
   </url>
@@ -14,11 +39,6 @@
   <url>
     <loc>http://functionaljs.com/collections/apply/</loc>
     <lastmod>2014-06-25T13:55:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://functionaljs.com/collections/select-filter/</loc>
-    <lastmod>2014-06-25T13:50:11.000Z</lastmod>
   </url>
   
   <url>

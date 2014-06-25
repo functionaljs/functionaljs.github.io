@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Extending arity with λ.curry | functional.js</title>
+  <title>λ.partition items in array | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://functionaljs.com/basics/arity/">
+  <link rel="canonical" href="http://functionaljs.com/arrays/partition/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
@@ -21,15 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="Examples of extending JavaScript function arity with λ.curry.">
+  <meta name="description" content="λ.partition returns an array of two arrays (first array is all items that return true)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Extending arity with λ.curry">
-<meta property="og:url" content="http://functionaljs.com/basics/arity/index.html">
+<meta property="og:title" content="λ.partition items in array">
+<meta property="og:url" content="http://functionaljs.com/arrays/partition/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="Examples of extending JavaScript function arity with λ.curry.">
+<meta property="og:description" content="λ.partition returns an array of two arrays (first array is all items that return true)">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Extending arity with λ.curry">
-<meta name="twitter:description" content="Examples of extending JavaScript function arity with λ.curry.">
+<meta name="twitter:title" content="λ.partition items in array">
+<meta name="twitter:description" content="λ.partition returns an array of two arrays (first array is all items that return true)">
 <meta name="twitter:site" content="@lee_crossley">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Extending arity with λ.curry</h1>
+        <h1 id="page-title" itemprop="name">λ.partition items in array</h1>
       </div>
     </div>
   </header>
@@ -74,29 +74,30 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Arity"><span class="toc-number">1.</span> <span class="toc-text">Arity</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.1.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-partition"><span class="toc-number">1.</span> <span class="toc-text">λ.partition</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="Arity">Arity</h2>
-<p>The arity of a JavaScript function is the number of arguments <em>expected</em> by the function. With λ.curry it is possible to extend this arity beyond the expected length.</p>
-<h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> add = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(arg1, arg2)</span> {</span>
-    <span class="keyword">return</span> arg1 + arg2;
-});
-
-<span class="keyword">var</span> add3 = add(<span class="number">3</span>);
-
-add(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// =&gt; 6</span>
-add3(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>); <span class="comment">// =&gt; 18</span>
+        <h2 id="λ-partition">λ.partition</h2>
+<p>λ.partition returns an array of two arrays. The first array is all items that return true for the iterator function, the second array is all items that return false for the iterator function (i.e. the rest).</p>
+<h3 id="Usage">Usage</h3>
+<figure class="highlight js"><pre>λ.partition(iterator, items);
 </pre></figure>
 
-<p>The “add” function can now take any number of arguments (&gt;= the expected arity) and the numbers will be summed. The “add” function can also be curried in the usual way by partial invocation (only supplying one argument, “add3”).</p>
-<p>The higher order function “add3” can also take any number of arguments, beyond the expected arity.</p>
+<h3 id="Example">Example</h3>
+<figure class="highlight js"><pre><span class="keyword">var</span> even = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
+    <span class="keyword">return</span> item % <span class="number">2</span> === <span class="number">0</span>;
+};
+
+<span class="keyword">var</span> partitionEven = λ.partition(even);
+
+partitionEven([<span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]);
+<span class="comment">// =&gt; [[6, 4, 2], [7, 5, 3, 1]]</span>
+</pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T12:42:18.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
-        <a href="/basics/curry/" id="page-footer-prev" title="λ.curry">Prev</a><a href="/collections/each/" id="page-footer-next" title="λ.each">Next</a>
+        <time id="page-footer-updated" datetime="2014-06-25T14:35:56.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
+        <a href="/arrays/best/" id="page-footer-prev" title="λ.best">Prev</a>
       </footer>
       
     </div>
@@ -113,7 +114,7 @@ add3(<span class="number">1</span>, <span class="number">2</span>, <span class="
     
       <a href="/basics/curry/" class="sidebar-link">λ.curry</a>
     
-      <a href="/basics/arity/" class="sidebar-link current">Extending arity</a>
+      <a href="/basics/arity/" class="sidebar-link">Extending arity</a>
     
   
     <strong class="sidebar-title">Collections</strong>
@@ -145,7 +146,7 @@ add3(<span class="number">1</span>, <span class="number">2</span>, <span class="
     
       <a href="/arrays/best/" class="sidebar-link">λ.best</a>
     
-      <a href="/arrays/partition/" class="sidebar-link">λ.partition</a>
+      <a href="/arrays/partition/" class="sidebar-link current">λ.partition</a>
     
   
 </aside>
