@@ -2,6 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://functionaljs.com/objects/prop/</loc>
+    <lastmod>2014-06-25T15:23:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/objects/assign-extend/</loc>
+    <lastmod>2014-06-25T15:13:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/objects/is-array/</loc>
+    <lastmod>2014-06-25T15:04:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/objects/clone/</loc>
+    <lastmod>2014-06-25T15:01:59.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/functions/compose/</loc>
+    <lastmod>2014-06-25T14:50:10.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/arrays/partition/</loc>
     <lastmod>2014-06-25T14:35:56.000Z</lastmod>
   </url>

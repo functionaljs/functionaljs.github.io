@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Iterate items with λ.each | functional.js</title>
+  <title>λ.prop object property | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://functionaljs.com/collections/each/">
+  <link rel="canonical" href="http://functionaljs.com/objects/prop/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
@@ -21,15 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="λ.each allows iteration over a list of items, applying an iterator function to each item.">
+  <meta name="description" content="λ.prop returns a copy of an array.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Iterate items with λ.each">
-<meta property="og:url" content="http://functionaljs.com/collections/each/index.html">
+<meta property="og:title" content="λ.prop object property">
+<meta property="og:url" content="http://functionaljs.com/objects/prop/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="λ.each allows iteration over a list of items, applying an iterator function to each item.">
+<meta property="og:description" content="λ.prop returns a copy of an array.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iterate items with λ.each">
-<meta name="twitter:description" content="λ.each allows iteration over a list of items, applying an iterator function to each item.">
+<meta name="twitter:title" content="λ.prop object property">
+<meta name="twitter:description" content="λ.prop returns a copy of an array.">
 <meta name="twitter:site" content="@lee_crossley">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Iterate items with λ.each</h1>
+        <h1 id="page-title" itemprop="name">λ.prop object property</h1>
       </div>
     </div>
   </header>
@@ -74,40 +74,29 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-each"><span class="toc-number">1.</span> <span class="toc-text">λ.each</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-prop"><span class="toc-number">1.</span> <span class="toc-text">λ.prop</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="λ-each">λ.each</h2>
-<p>λ.each allows iteration over a list of items, applying an iterator function to each item. This is similar to the native forEach function available in modern browsers but uses its own implementation that utilises λ.curry by default.</p>
+        <h2 id="λ-prop">λ.prop</h2>
+<p>λ.prop returns a function that will return the value of any property name argument.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.each(iterator, items);
+<figure class="highlight js"><pre>λ.prop(propertyName);
 </pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> result = [];
-<span class="keyword">var</span> items = [<span class="string">"f"</span>, <span class="string">"u"</span>, <span class="string">"n"</span>, <span class="string">"c"</span>];
-
-<span class="keyword">var</span> addTo = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
-    <span class="keyword">return</span> result.push(item);
-};
-
-<span class="keyword">var</span> addToResult = λ.each(addTo);
-
-addToResult(items);
-<span class="comment">// =&gt; ["f", "u", "n", "c"]</span>
+<figure class="highlight js"><pre>λ.prop(<span class="string">"hello"</span>)({ <span class="string">"hello"</span>: <span class="string">"world"</span> }); <span class="comment">// =&gt; "world"</span>
 </pre></figure>
 
-<p>“addTo” is the iterator function applied to each item in the list (“items” array). “addToResult” is a higher order function created by partially invoking the “addTo”. The “addToResult” function can be reused with different arrays if required.</p>
-<blockquote class="note warn"><strong class="note-title">Breaking out</strong>
+<blockquote class="note warn"><strong class="note-title">Implementation issue</strong>
 
-<p>You cannot “break;” from an λ.each, it is intended to always iterate for all items. Other functions do allow breaking out of loops and achieve similar results.</p>
+<p>This implementation is under consideration to be rewritten, inline with other functions that can already be curried in the standard way.</p>
 </blockquote>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T11:34:58.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
-        <a href="/basics/arity/" id="page-footer-prev" title="Extending arity">Prev</a><a href="/collections/map/" id="page-footer-next" title="λ.map">Next</a>
+        <time id="page-footer-updated" datetime="2014-06-25T15:23:25.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
+        <a href="/objects/assign-extend/" id="page-footer-prev" title="λ.assign">Prev</a>
       </footer>
       
     </div>
@@ -129,7 +118,7 @@ addToResult(items);
   
     <strong class="sidebar-title">Collections</strong>
     
-      <a href="/collections/each/" class="sidebar-link current">λ.each</a>
+      <a href="/collections/each/" class="sidebar-link">λ.each</a>
     
       <a href="/collections/map/" class="sidebar-link">λ.map</a>
     
@@ -172,7 +161,7 @@ addToResult(items);
     
       <a href="/objects/assign-extend/" class="sidebar-link">λ.assign</a>
     
-      <a href="/objects/prop/" class="sidebar-link">λ.prop</a>
+      <a href="/objects/prop/" class="sidebar-link current">λ.prop</a>
     
   
 </aside>
