@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://functionaljs.com/the-basics/currying-functions/</loc>
+    <lastmod>2014-06-25T10:12:50.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/getting-started/installation/</loc>
-    <lastmod>2014-06-25T09:49:43.000Z</lastmod>
+    <lastmod>2014-06-25T09:53:47.000Z</lastmod>
   </url>
   
   <url>
