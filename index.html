@@ -22,17 +22,23 @@
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
   <meta name="description" content="What is functional.js?
-functional.js is a functional JavaScript library. It facilitates currying and point-free / tacit programming.">
+functional.js is a functional JavaScript library. It facilitates currying and point-free / tacit programming and this methodology has been adhered to from the ground up.
+Is t">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Getting started">
 <meta property="og:url" content="http://functionaljs.com/index.html">
 <meta property="og:site_name" content="functional.js">
 <meta property="og:description" content="What is functional.js?
-functional.js is a functional JavaScript library. It facilitates currying and point-free / tacit programming.">
+functional.js is a functional JavaScript library. It facilitates currying and point-free / tacit programming and this methodology has been adhered to from the ground up.
+Is t">
+<meta property="og:image" content="https://travis-ci.org/leecrossley/functional-js.png?branch=master">
+<meta property="og:image" content="https://badge.fury.io/js/functional.js.png">
+<meta property="og:image" content="https://david-dm.org/leecrossley/functional-js/dev-status.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Getting started">
 <meta name="twitter:description" content="What is functional.js?
-functional.js is a functional JavaScript library. It facilitates currying and point-free / tacit programming.">
+functional.js is a functional JavaScript library. It facilitates currying and point-free / tacit programming and this methodology has been adhered to from the ground up.
+Is t">
 <meta name="twitter:site" content="@lee_crossley">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
@@ -77,15 +83,21 @@ functional.js is a functional JavaScript library. It facilitates currying and po
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What_is_functional-js?"><span class="toc-number">1.</span> <span class="toc-text">What is functional.js?</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What_is_functional-js?"><span class="toc-number">1.</span> <span class="toc-text">What is functional.js?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Is_this_like_underscore-js?"><span class="toc-number">2.</span> <span class="toc-text">Is this like underscore.js?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Where’s_the_λ_key?"><span class="toc-number">3.</span> <span class="toc-text">Where’s the λ key?</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="What_is_functional-js?">What is functional.js?</h2>
-<p>functional.js is a functional JavaScript library. It facilitates <a href="http://en.wikipedia.org/wiki/Currying" target="_blank" rel="external">currying</a> and <a href="http://en.wikipedia.org/wiki/Tacit_programming" target="_blank" rel="external">point-free / tacit</a> programming.</p>
+        <p><a href="https://travis-ci.org/leecrossley/functional-js" target="_blank" rel="external"><img src="https://travis-ci.org/leecrossley/functional-js.png?branch=master" alt="Build Status"></a> <a href="https://npmjs.org/package/functional.js" target="_blank" rel="external"><img src="https://badge.fury.io/js/functional.js.png" alt="npm version"></a> <a href="https://david-dm.org/leecrossley/functional-js#info=devDependencies" target="_blank" rel="external"><img src="https://david-dm.org/leecrossley/functional-js/dev-status.png" alt="devDependency Status"></a></p>
+<h2 id="What_is_functional-js?">What is functional.js?</h2>
+<p>functional.js is a functional JavaScript library. It facilitates <a href="http://en.wikipedia.org/wiki/Currying" target="_blank" rel="external">currying</a> and <a href="http://en.wikipedia.org/wiki/Tacit_programming" target="_blank" rel="external">point-free / tacit</a> programming and this methodology has been adhered to from the ground up.</p>
+<h2 id="Is_this_like_underscore-js?">Is this like underscore.js?</h2>
+<p>Yes and no. There are many similar functions but libraries like underscore can’t be curried in a regular fashion, as the items come before the iterator when supplied as arguments (e.g. (items, iterator) not (iterator, items)). There’s also no support in underscore.js for functional-level programming, whereas this is the premise for functional.js.</p>
+<p>functional.js is really lightweight and can be used instead of underscore.js. It also has no dependencies and doesn’t extend any of JavaScript’s standard built-in objects or use native functions that conditionalise implementations.</p>
+<h2 id="Where’s_the_λ_key?">Where’s the λ key?</h2>
+<p>Depending on your OS or editor, there are lots of options. If you’re really stuck, just copy and paste: λ</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-24T17:02:43.000Z" itemprop="dateModified">Updated: 24th Jun 2014</time>
+        <time id="page-footer-updated" datetime="2014-06-25T08:54:03.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
         <a href="/getting-started/installation/" id="page-footer-next" title="Installation">Next</a>
       </footer>
       
