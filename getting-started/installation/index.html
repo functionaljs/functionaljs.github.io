@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Getting started | functional.js</title>
+  <title>How to install | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://functionaljs.com/getting-started/installation/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
@@ -21,18 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="What is functional.js?
-functional.js is a functional JavaScript library. It facilitates currying and point-free / tacit programming.">
+  <meta name="description" content="functional.js works in the browser and with node.js, there are several options for installation.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Getting started">
+<meta property="og:title" content="How to install">
 <meta property="og:url" content="http://functionaljs.com/getting-started/installation/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="What is functional.js?
-functional.js is a functional JavaScript library. It facilitates currying and point-free / tacit programming.">
+<meta property="og:description" content="functional.js works in the browser and with node.js, there are several options for installation.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Getting started">
-<meta name="twitter:description" content="What is functional.js?
-functional.js is a functional JavaScript library. It facilitates currying and point-free / tacit programming.">
+<meta name="twitter:title" content="How to install">
+<meta name="twitter:description" content="functional.js works in the browser and with node.js, there are several options for installation.">
 <meta name="twitter:site" content="@lee_crossley">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
@@ -69,7 +66,7 @@ functional.js is a functional JavaScript library. It facilitates currying and po
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Getting started</h1>
+        <h1 id="page-title" itemprop="name">How to install</h1>
       </div>
     </div>
   </header>
@@ -77,15 +74,34 @@ functional.js is a functional JavaScript library. It facilitates currying and po
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What_is_functional-js?"><span class="toc-number">1.</span> <span class="toc-text">What is functional.js?</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js"><span class="toc-number">1.</span> <span class="toc-text">Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Client_side"><span class="toc-number">2.</span> <span class="toc-text">Client side</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Source_code"><span class="toc-number">3.</span> <span class="toc-text">Source code</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="What_is_functional-js?">What is functional.js?</h2>
-<p>functional.js is a functional JavaScript library. It facilitates <a href="http://en.wikipedia.org/wiki/Currying" target="_blank" rel="external">currying</a> and <a href="http://en.wikipedia.org/wiki/Tacit_programming" target="_blank" rel="external">point-free / tacit</a> programming.</p>
+        <h2 id="Node-js">Node.js</h2>
+<p>Install via npm and save the dependency in your package.json:</p>
+<figure class="highlight bash"><pre>npm install functional.js --save
+</pre></figure>
+
+<p>Then to include functional.min.js in your app:</p>
+<figure class="highlight js"><pre><span class="keyword">var</span> λ = <span class="built_in">require</span>(<span class="string">"functional.js"</span>);
+</pre></figure>
+
+<h2 id="Client_side">Client side</h2>
+<p>There is no CDN yet, you should download the latest minified version from <a href="http://bit.ly/funcmin" target="_blank" rel="external">here</a>. Once you reference the js file “λ” will become a global variable.</p>
+<blockquote class="note warn"><strong class="note-title">"λ" character issues</strong>
+
+<p>There are possible issues with using the “λ” character client side. There shouldn’t be, but there are. If you experience issues, there is an alternative client version, functional.min.client.js which uses “lambda” instead of “λ”. Download the minified client version <a href="http://bit.ly/funcclient" target="_blank" rel="external">here</a>, reference the js file and lambda will become a global variable.</p>
+</blockquote>
+
+
+<h2 id="Source_code">Source code</h2>
+<p>The source code is available on <a href="https://github.com/leecrossley/functional-js" target="_blank" rel="external">Github</a>, you can clone the repo:</p>
+<figure class="highlight bash"><pre>git clone git@github.com:leecrossley/functional-js.git
+</pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-24T16:48:44.000Z" itemprop="dateModified">Updated: 24th Jun 2014</time>
+        <time id="page-footer-updated" datetime="2014-06-25T09:49:43.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
         <a href="/" id="page-footer-prev" title="Introduction">Prev</a>
       </footer>
       
