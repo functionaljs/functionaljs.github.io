@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://functionaljs.com/existentials/falsy/</loc>
+    <lastmod>2014-06-25T15:34:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/existentials/truthy/</loc>
+    <lastmod>2014-06-25T15:33:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/existentials/exists/</loc>
+    <lastmod>2014-06-25T15:32:58.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/objects/prop/</loc>
-    <lastmod>2014-06-25T15:23:25.000Z</lastmod>
+    <lastmod>2014-06-25T15:26:49.000Z</lastmod>
   </url>
   
   <url>
