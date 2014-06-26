@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://functionaljs.com/collections/fold/</loc>
+    <lastmod>2014-06-26T14:42:50.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/collections/reduce/</loc>
-    <lastmod>2014-06-26T14:10:51.000Z</lastmod>
+    <lastmod>2014-06-26T14:40:02.000Z</lastmod>
   </url>
   
   <url>

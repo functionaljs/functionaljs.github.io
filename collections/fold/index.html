@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Convert object λ.toArray | functional.js</title>
+  <title>fold array to value with λ.fold | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://functionaljs.com/collections/to-array/">
+  <link rel="canonical" href="http://functionaljs.com/collections/fold/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
@@ -21,15 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="λ.toArray converts an object with properties to an array.">
+  <meta name="description" content="λ.fold is similar to λ.reduce but takes an initial value.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Convert object λ.toArray">
-<meta property="og:url" content="http://functionaljs.com/collections/to-array/index.html">
+<meta property="og:title" content="fold array to value with λ.fold">
+<meta property="og:url" content="http://functionaljs.com/collections/fold/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="λ.toArray converts an object with properties to an array.">
+<meta property="og:description" content="λ.fold is similar to λ.reduce but takes an initial value.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Convert object λ.toArray">
-<meta name="twitter:description" content="λ.toArray converts an object with properties to an array.">
+<meta name="twitter:title" content="fold array to value with λ.fold">
+<meta name="twitter:description" content="λ.fold is similar to λ.reduce but takes an initial value.">
 <meta name="twitter:site" content="@lee_crossley">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Convert object λ.toArray</h1>
+        <h1 id="page-title" itemprop="name">fold array to value with λ.fold</h1>
       </div>
     </div>
   </header>
@@ -74,30 +74,32 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-toArray"><span class="toc-number">1.</span> <span class="toc-text">λ.toArray</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-fold"><span class="toc-number">1.</span> <span class="toc-text">λ.fold</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="λ-toArray">λ.toArray</h2>
-<p>λ.toArray converts an object with properties to an array.</p>
+        <h2 id="λ-fold">λ.fold</h2>
+<ul>
+<li><em>Alias:</em> λ.foldl</li>
+</ul>
+<p>λ.fold is similar to <a href="/collections/reduce/">λ.reduce</a> but takes an initial value. It supports currying by default.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.toArray(obj);
+<figure class="highlight js"><pre>λ.fold(iterator, initial, items);
 </pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> obj = {
-    <span class="string">"p1"</span>: <span class="string">"abc"</span>,
-    <span class="string">"p2"</span>: <span class="literal">false</span>,
-    <span class="string">"p3"</span>: <span class="literal">null</span>
+<figure class="highlight js"><pre><span class="keyword">var</span> multiply = <span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> {</span>
+    <span class="keyword">return</span> arg1 * arg2;
 };
 
-λ.toArray(obj);
-<span class="comment">// =&gt; [["p1", "abc"], ["p2", false], ["p3", null]]</span>
+<span class="keyword">var</span> multiplyFoldFrom10 = λ.fold(multiply, <span class="number">10</span>);
+
+multiplyFoldFrom10([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// =&gt; 60</span>
 </pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T14:09:05.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
-        <a href="/collections/pluck/" id="page-footer-prev" title="λ.pluck">Prev</a><a href="/arrays/first/" id="page-footer-next" title="λ.first">Next</a>
+        <time id="page-footer-updated" datetime="2014-06-26T14:42:50.000Z" itemprop="dateModified">Updated: 26th Jun 2014</time>
+        <a href="/collections/reduce/" id="page-footer-prev" title="λ.reduce">Prev</a><a href="/collections/apply/" id="page-footer-next" title="λ.apply">Next</a>
       </footer>
       
     </div>
@@ -125,7 +127,7 @@
     
       <a href="/collections/reduce/" class="sidebar-link">λ.reduce</a>
     
-      <a href="/collections/fold/" class="sidebar-link">λ.fold</a>
+      <a href="/collections/fold/" class="sidebar-link current">λ.fold</a>
     
       <a href="/collections/apply/" class="sidebar-link">λ.apply</a>
     
@@ -137,7 +139,7 @@
     
       <a href="/collections/pluck/" class="sidebar-link">λ.pluck</a>
     
-      <a href="/collections/to-array/" class="sidebar-link current">λ.toArray</a>
+      <a href="/collections/to-array/" class="sidebar-link">λ.toArray</a>
     
   
     <strong class="sidebar-title">Arrays</strong>
