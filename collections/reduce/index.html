@@ -81,33 +81,24 @@
 <ul>
 <li><em>Alias:</em> λ.reducel</li>
 </ul>
-<p>λ.reduce applies an iterator function against an internal accumulator object and all items in the list are reduced to a single value. Similar to the native Array.prototype.reduce() available in ES5 but does not use any native functions and supports currying by default (as well as working in older browsers)</p>
+<p>λ.reduce applies an iterator function against an internal accumulator object and all items in the list are reduced to a single value. Similar to the native Array.prototype.reduce() available in ES5 but does not use any native functions and supports currying by default (as well as working in older browsers).</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.reduce(iterator, initial, items);
+<figure class="highlight js"><pre>λ.reduce(iterator, items);
 </pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> items = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];
-
-<span class="keyword">var</span> multiply = <span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> {</span>
+<figure class="highlight js"><pre><span class="keyword">var</span> multiply = <span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> {</span>
     <span class="keyword">return</span> arg1 * arg2;
 };
 
-<span class="keyword">var</span> multiplyReduceFrom1 = λ.reduce(multiply, <span class="number">1</span>);
+<span class="keyword">var</span> multiplyReduce = λ.reduce(multiply);
 
-multiplyReduceFrom1(items);
-<span class="comment">// =&gt; 6</span>
+multiplyReduce([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// =&gt; 6</span>
 </pre></figure>
-
-<blockquote class="note warn"><strong class="note-title">Initial value</strong>
-
-<p>There is currently a requirement to supply an initial value to reduce (in the case above “1”). Removal of this is being considered.</p>
-</blockquote>
-
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T11:34:34.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
+        <time id="page-footer-updated" datetime="2014-06-26T14:10:51.000Z" itemprop="dateModified">Updated: 26th Jun 2014</time>
         <a href="/collections/map/" id="page-footer-prev" title="λ.map">Prev</a><a href="/collections/apply/" id="page-footer-next" title="λ.apply">Next</a>
       </footer>
       

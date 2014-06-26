@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://functionaljs.com/collections/reduce/</loc>
+    <lastmod>2014-06-26T14:10:51.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/existentials/falsy/</loc>
     <lastmod>2014-06-25T15:34:46.000Z</lastmod>
   </url>
@@ -104,11 +109,6 @@
   <url>
     <loc>http://functionaljs.com/collections/map/</loc>
     <lastmod>2014-06-25T11:34:50.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://functionaljs.com/collections/reduce/</loc>
-    <lastmod>2014-06-25T11:34:34.000Z</lastmod>
   </url>
   
   <url>
