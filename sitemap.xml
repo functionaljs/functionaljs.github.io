@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://functionaljs.com/404.html</loc>
+    <lastmod>2014-07-19T16:17:58.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/collections/fold/</loc>
     <lastmod>2014-06-26T14:42:50.000Z</lastmod>
   </url>
