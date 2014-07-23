@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>404 | functional.js</title>
+  <title>Take from array while | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://functionaljs.com/404.html">
+  <link rel="canonical" href="http://functionaljs.com/collections/while/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
@@ -21,15 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="Page not found">
-<meta property="og:type" content="website">
-<meta property="og:title" content="404">
-<meta property="og:url" content="http://functionaljs.com/404.html">
+  <meta name="description" content="λ.while returns values from an array while the iterator function returns true.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Take from array while">
+<meta property="og:url" content="http://functionaljs.com/collections/while/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="Page not found">
+<meta property="og:description" content="λ.while returns values from an array while the iterator function returns true.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="404">
-<meta name="twitter:description" content="Page not found">
+<meta name="twitter:title" content="Take from array while">
+<meta name="twitter:description" content="λ.while returns values from an array while the iterator function returns true.">
 <meta name="twitter:site" content="@lee_crossley">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
@@ -66,22 +66,37 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">404</h1>
+        <h1 id="page-title" itemprop="name">Take from array while</h1>
       </div>
     </div>
   </header>
   <div class="outer">
     <div class="page-content">
       
+      <div class="toc-wrap">
+        <strong class="toc-title">Jump to</strong>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-while"><span class="toc-number">1.</span> <span class="toc-text">λ.while</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
+      </div>
+      
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="4_0_Fiddlesticks!">4 0 Fiddlesticks!</h2>
-<p><strong>404 - Page Not Found</strong></p>
-<p>Head over to the functional.js <a href="/">homepage</a>.</p>
+        <h2 id="λ-while">λ.while</h2>
+<p>λ.while returns values from an array while the iterator function returns true and stops as soon as an item returns false. Can be curried by default.</p>
+<h3 id="Usage">Usage</h3>
+<figure class="highlight js"><pre>λ.while(iterator, items);
+</pre></figure>
+
+<h3 id="Example">Example</h3>
+<figure class="highlight js"><pre><span class="keyword">var</span> whileEven = λ.while(<span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
+    <span class="keyword">return</span> item % <span class="number">2</span> === <span class="number">0</span>;
+});
+
+whileEven([<span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]); <span class="comment">// =&gt; [2, 4]</span>
+</pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-07-19T16:22:20.000Z" itemprop="dateModified">Updated: 19th Jul 2014</time>
-        <a href="/" id="page-footer-next" title="Introduction">Next</a>
+        <time id="page-footer-updated" datetime="2014-07-23T08:55:58.000Z" itemprop="dateModified">Updated: 23rd Jul 2014</time>
+        <a href="/collections/partition/" id="page-footer-prev" title="λ.partition">Prev</a><a href="/functions/compose/" id="page-footer-next" title="λ.compose">Next</a>
       </footer>
       
     </div>
@@ -131,7 +146,7 @@
     
       <a href="/collections/partition/" class="sidebar-link">λ.partition</a>
     
-      <a href="/collections/while/" class="sidebar-link">λ.while</a>
+      <a href="/collections/while/" class="sidebar-link current">λ.while</a>
     
   
     <strong class="sidebar-title">Functions</strong>
