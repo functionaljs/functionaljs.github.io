@@ -31,7 +31,9 @@
 <meta name="twitter:title" content="λ.pluck a property">
 <meta name="twitter:description" content="λ.pluck maps / extracts a list of property values from items in an array.">
 <meta name="twitter:site" content="@lee_crossley">
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   
@@ -75,15 +77,14 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-pluck"><span class="toc-number">1.</span> <span class="toc-text">λ.pluck</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic_example"><span class="toc-number">1.2.</span> <span class="toc-text">Basic example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-pluck"><span class="toc-number">1.</span> <span class="toc-text">λ.pluck</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic_example"><span class="toc-number">1.2.</span> <span class="toc-text">Basic example</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="λ-pluck">λ.pluck</h2>
 <p>λ.pluck is a special kind of λ.map that extracts a list of property values for a given property name from items in an array.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.pluck(propertyName, items);
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">λ.pluck(propertyName, items);</div></pre></figure>
 
 <blockquote class="note info"><strong class="note-title">Implementation note</strong>
 
@@ -92,22 +93,7 @@
 
 
 <h3 id="Basic_example">Basic example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> items = [{
-    <span class="string">"p1"</span>: <span class="string">"abc"</span>,
-    <span class="string">"p2"</span>: <span class="number">123</span>
-}, {
-    <span class="string">"p1"</span>: <span class="string">"cab"</span>,
-    <span class="string">"p2"</span>: <span class="number">312</span>
-},{
-    <span class="string">"p1"</span>: <span class="string">"bca"</span>,
-    <span class="string">"p2"</span>: <span class="number">231</span>
-}];
-
-<span class="keyword">var</span> pluck1 = λ.pluck(<span class="string">"p1"</span>);
-
-pluck1(items);
-<span class="comment">// =&gt; ["abc", "cab", "bca"]</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> items = [{</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"abc"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">123</span></div><div class="line">}, {</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"cab"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">312</span></div><div class="line">},{</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"bca"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">231</span></div><div class="line">}];</div><div class="line"></div><div class="line"><span class="keyword">var</span> pluck1 = λ.pluck(<span class="string">"p1"</span>);</div><div class="line"></div><div class="line">pluck1(items);</div><div class="line"><span class="comment">// =&gt; ["abc", "cab", "bca"]</span></div></pre></figure>
 
       </div>
       <footer id="page-footer">

@@ -31,7 +31,9 @@
 <meta name="twitter:title" content="How to install">
 <meta name="twitter:description" content="functional.js works in the browser and with node.js, there are several options for installation.">
 <meta name="twitter:site" content="@lee_crossley">
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   
@@ -75,23 +77,20 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js"><span class="toc-number">1.</span> <span class="toc-text">Node.js</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">1.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Update"><span class="toc-number">1.2.</span> <span class="toc-text">Update</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Client_side"><span class="toc-number">2.</span> <span class="toc-text">Client side</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Source_code"><span class="toc-number">3.</span> <span class="toc-text">Source code</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js"><span class="toc-number">1.</span> <span class="toc-text">Node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">1.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Update"><span class="toc-number">1.2.</span> <span class="toc-text">Update</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Client_side"><span class="toc-number">2.</span> <span class="toc-text">Client side</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Source_code"><span class="toc-number">3.</span> <span class="toc-text">Source code</span></a></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="Node-js">Node.js</h2>
 <h3 id="Install">Install</h3>
 <p>Install via npm and save the dependency in your package.json:</p>
-<figure class="highlight bash"><pre>npm install functional.js --save
-</pre></figure>
+<figure class="highlight bash"><pre><div class="line">npm install functional.js --save</div></pre></figure>
 
 <p>Then to include functional.min.js in your app:</p>
-<figure class="highlight js"><pre><span class="keyword">var</span> λ = <span class="built_in">require</span>(<span class="string">"functional.js"</span>);
-</pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> λ = <span class="built_in">require</span>(<span class="string">"functional.js"</span>);</div></pre></figure>
 
 <h3 id="Update">Update</h3>
-<figure class="highlight bash"><pre>npm update functional.js
-</pre></figure>
+<figure class="highlight bash"><pre><div class="line">npm update functional.js</div></pre></figure>
 
 <h2 id="Client_side">Client side</h2>
 <p>There is no CDN yet, you should download the latest minified version from <a href="http://bit.ly/funcmin" target="_blank" rel="external">here</a> and host it yourself. Once you reference the js file “λ” will become a global variable.</p>
@@ -103,8 +102,7 @@
 
 <h2 id="Source_code">Source code</h2>
 <p>The source code is available on <a href="https://github.com/leecrossley/functional-js" target="_blank" rel="external">Github</a>, you can clone the repo:</p>
-<figure class="highlight bash"><pre>git clone git@github.com:leecrossley/functional-js.git
-</pre></figure>
+<figure class="highlight bash"><pre><div class="line">git clone git@github.com:leecrossley/functional-js.git</div></pre></figure>
 
       </div>
       <footer id="page-footer">

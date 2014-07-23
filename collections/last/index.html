@@ -31,7 +31,9 @@
 <meta name="twitter:title" content="λ.last in array">
 <meta name="twitter:description" content="λ.last returns the last item in a list that returns true for the iterator function.">
 <meta name="twitter:site" content="@lee_crossley">
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   
@@ -75,30 +77,17 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-last"><span class="toc-number">1.</span> <span class="toc-text">λ.last</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-last"><span class="toc-number">1.</span> <span class="toc-text">λ.last</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="λ-last">λ.last</h2>
 <p>λ.last returns the last item in a list that returns true for the iterator function. Can be curried by default.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.last(iterator, items);
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">λ.last(iterator, items);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> even = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
-    <span class="keyword">return</span> item % <span class="number">2</span> === <span class="number">0</span>;
-};
-<span class="keyword">var</span> odd = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
-    <span class="keyword">return</span> item % <span class="number">2</span> !== <span class="number">0</span>;
-};
-
-<span class="keyword">var</span> lastEven = λ.last(even);
-<span class="keyword">var</span> lastOdd = λ.last(odd);
-
-lastEven([<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]); <span class="comment">// =&gt; 2</span>
-lastOdd([<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]); <span class="comment">// =&gt; 1</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> even = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span></div><div class="line">    <span class="keyword">return</span> item % <span class="number">2</span> === <span class="number">0</span>;</div><div class="line">};</div><div class="line"><span class="keyword">var</span> odd = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span></div><div class="line">    <span class="keyword">return</span> item % <span class="number">2</span> !== <span class="number">0</span>;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">var</span> lastEven = λ.last(even);</div><div class="line"><span class="keyword">var</span> lastOdd = λ.last(odd);</div><div class="line"></div><div class="line">lastEven([<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]); <span class="comment">// =&gt; 2</span></div><div class="line">lastOdd([<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]); <span class="comment">// =&gt; 1</span></div></pre></figure>
 
       </div>
       <footer id="page-footer">

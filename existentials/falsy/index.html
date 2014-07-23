@@ -31,7 +31,9 @@
 <meta name="twitter:title" content="λ.falsy object">
 <meta name="twitter:description" content="λ.falsy returns true if an object can be coerced to false in a boolean context.">
 <meta name="twitter:site" content="@lee_crossley">
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   
@@ -75,23 +77,17 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-falsy"><span class="toc-number">1.</span> <span class="toc-text">λ.falsy</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Examples"><span class="toc-number">1.2.</span> <span class="toc-text">Examples</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-falsy"><span class="toc-number">1.</span> <span class="toc-text">λ.falsy</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Examples"><span class="toc-number">1.2.</span> <span class="toc-text">Examples</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="λ-falsy">λ.falsy</h2>
 <p>λ.falsy returns true if an object can be coerced to false in a boolean context.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.falsy(obj);
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">λ.falsy(obj);</div></pre></figure>
 
 <h3 id="Examples">Examples</h3>
-<figure class="highlight js"><pre>expect(λ.falsy(<span class="literal">false</span>); <span class="comment">// =&gt; true</span>
-expect(λ.falsy(<span class="literal">null</span>); <span class="comment">// =&gt; true</span>
-
-expect(λ.falsy(<span class="literal">true</span>); <span class="comment">// =&gt; false</span>
-expect(λ.falsy(<span class="string">"abc"</span>); <span class="comment">// =&gt; false</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">expect(λ.falsy(<span class="literal">false</span>); <span class="comment">// =&gt; true</span></div><div class="line">expect(λ.falsy(<span class="literal">null</span>); <span class="comment">// =&gt; true</span></div><div class="line"></div><div class="line">expect(λ.falsy(<span class="literal">true</span>); <span class="comment">// =&gt; false</span></div><div class="line">expect(λ.falsy(<span class="string">"abc"</span>); <span class="comment">// =&gt; false</span></div></pre></figure>
 
       </div>
       <footer id="page-footer">

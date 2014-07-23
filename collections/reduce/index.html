@@ -31,7 +31,9 @@
 <meta name="twitter:title" content="Reduce array to value with λ.reduce">
 <meta name="twitter:description" content="λ.reduce applies an iterator function against an internal accumulator object and all items in the list are reduced to a single value.">
 <meta name="twitter:site" content="@lee_crossley">
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   
@@ -75,7 +77,7 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-reduce"><span class="toc-number">1.</span> <span class="toc-text">λ.reduce</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-reduce"><span class="toc-number">1.</span> <span class="toc-text">λ.reduce</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
@@ -86,18 +88,10 @@
 </ul>
 <p>λ.reduce applies an iterator function against an internal accumulator object and all items in the list are reduced to a single value. Similar to the native Array.prototype.reduce() available in ES5 but does not use any native functions and supports currying by default (as well as working in older browsers).</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.reduce(iterator, items);
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">λ.reduce(iterator, items);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> multiply = <span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> {</span>
-    <span class="keyword">return</span> arg1 * arg2;
-};
-
-<span class="keyword">var</span> multiplyReduce = λ.reduce(multiply);
-
-multiplyReduce([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// =&gt; 6</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> multiply = <span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> {</span></div><div class="line">    <span class="keyword">return</span> arg1 * arg2;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">var</span> multiplyReduce = λ.reduce(multiply);</div><div class="line"></div><div class="line">multiplyReduce([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// =&gt; 6</span></div></pre></figure>
 
       </div>
       <footer id="page-footer">

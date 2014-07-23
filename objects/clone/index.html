@@ -31,7 +31,9 @@
 <meta name="twitter:title" content="λ.clone an array">
 <meta name="twitter:description" content="λ.clone returns a copy of an array.">
 <meta name="twitter:site" content="@lee_crossley">
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   
@@ -75,19 +77,17 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-clone"><span class="toc-number">1.</span> <span class="toc-text">λ.clone</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-clone"><span class="toc-number">1.</span> <span class="toc-text">λ.clone</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="λ-clone">λ.clone</h2>
 <p>λ.clone returns a copy of an array. Useful if you want to manipulate an array without modifying the original, such as with the native “reverse” function.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.clone(items);
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">λ.clone(items);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre>λ.clone([<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]); <span class="comment">// =&gt; [5, 4, 3, 2, 1]</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">λ.clone([<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]); <span class="comment">// =&gt; [5, 4, 3, 2, 1]</span></div></pre></figure>
 
       </div>
       <footer id="page-footer">

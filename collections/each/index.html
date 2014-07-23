@@ -31,7 +31,9 @@
 <meta name="twitter:title" content="Iterate items with λ.each">
 <meta name="twitter:description" content="λ.each allows iteration over a list of items, applying an iterator function to each item.">
 <meta name="twitter:site" content="@lee_crossley">
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   
@@ -75,29 +77,17 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-each"><span class="toc-number">1.</span> <span class="toc-text">λ.each</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-each"><span class="toc-number">1.</span> <span class="toc-text">λ.each</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="λ-each">λ.each</h2>
 <p>λ.each allows iteration over a list of items, applying an iterator function to each item. This is similar to the native forEach function available in modern browsers but uses its own implementation that utilises λ.curry by default.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre>λ.each(iterator, items);
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">λ.each(iterator, items);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> result = [];
-<span class="keyword">var</span> items = [<span class="string">"f"</span>, <span class="string">"u"</span>, <span class="string">"n"</span>, <span class="string">"c"</span>];
-
-<span class="keyword">var</span> addTo = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
-    <span class="keyword">return</span> result.push(item);
-};
-
-<span class="keyword">var</span> addToResult = λ.each(addTo);
-
-addToResult(items);
-<span class="comment">// =&gt; ["f", "u", "n", "c"]</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> result = [];</div><div class="line"><span class="keyword">var</span> items = [<span class="string">"f"</span>, <span class="string">"u"</span>, <span class="string">"n"</span>, <span class="string">"c"</span>];</div><div class="line"></div><div class="line"><span class="keyword">var</span> addTo = <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span></div><div class="line">    <span class="keyword">return</span> result.push(item);</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">var</span> addToResult = λ.each(addTo);</div><div class="line"></div><div class="line">addToResult(items);</div><div class="line"><span class="comment">// =&gt; ["f", "u", "n", "c"]</span></div></pre></figure>
 
 <p>“addTo” is the iterator function applied to each item in the list (“items” array). “addToResult” is a higher order function created by partially invoking the “addTo”. The “addToResult” function can be reused with different arrays if required.</p>
 <blockquote class="note warn"><strong class="note-title">Breaking out</strong>

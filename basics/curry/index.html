@@ -31,7 +31,9 @@
 <meta name="twitter:title" content="Function currying with λ.curry">
 <meta name="twitter:description" content="Examples of currying JavaScript functions to create higher order functions for reuse.">
 <meta name="twitter:site" content="@lee_crossley">
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   
@@ -75,37 +77,18 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Currying"><span class="toc-number">1.</span> <span class="toc-text">Currying</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic_example"><span class="toc-number">1.1.</span> <span class="toc-text">Basic example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Another_example"><span class="toc-number">1.2.</span> <span class="toc-text">Another example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Currying"><span class="toc-number">1.</span> <span class="toc-text">Currying</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic_example"><span class="toc-number">1.1.</span> <span class="toc-text">Basic example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Another_example"><span class="toc-number">1.2.</span> <span class="toc-text">Another example</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="Currying">Currying</h2>
 <p>λ.curry allows you to easily higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.</p>
 <h3 id="Basic_example">Basic example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> concatenate = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(word1, word2)</span> {</span>
-    <span class="keyword">return</span> word1 + <span class="string">" "</span> + word2;
-});
-
-<span class="keyword">var</span> concatenateHello = concatenate(<span class="string">"Hello"</span>);
-
-concatenateHello(<span class="string">"World"</span>);
-<span class="comment">// =&gt; "Hello World"</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> concatenate = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(word1, word2)</span> {</span></div><div class="line">    <span class="keyword">return</span> word1 + <span class="string">" "</span> + word2;</div><div class="line">});</div><div class="line"></div><div class="line"><span class="keyword">var</span> concatenateHello = concatenate(<span class="string">"Hello"</span>);</div><div class="line"></div><div class="line">concatenateHello(<span class="string">"World"</span>);</div><div class="line"><span class="comment">// =&gt; "Hello World"</span></div></pre></figure>
 
 <p>The “concatenateHello” function is a higher order function created by partially invoking the “concatenate” function with the first argument. “concatenateHello” can then be reused.</p>
 <h3 id="Another_example">Another example</h3>
-<figure class="highlight js"><pre><span class="keyword">var</span> add = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(arg1, arg2, arg3)</span> {</span>
-    <span class="keyword">return</span> arg1 + arg2 + arg3;
-});
-
-<span class="keyword">var</span> add3 = add(<span class="number">3</span>);
-<span class="keyword">var</span> add5 = add3(<span class="number">2</span>);
-
-add(<span class="number">3</span>)(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span>
-add3(<span class="number">2</span>, <span class="number">1</span>); <span class="comment">// =&gt; 6</span>
-add3(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span>
-add5(<span class="number">1</span>); <span class="comment">// =&gt; 6</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> add = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(arg1, arg2, arg3)</span> {</span></div><div class="line">    <span class="keyword">return</span> arg1 + arg2 + arg3;</div><div class="line">});</div><div class="line"></div><div class="line"><span class="keyword">var</span> add3 = add(<span class="number">3</span>);</div><div class="line"><span class="keyword">var</span> add5 = add3(<span class="number">2</span>);</div><div class="line"></div><div class="line">add(<span class="number">3</span>)(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span></div><div class="line">add3(<span class="number">2</span>, <span class="number">1</span>); <span class="comment">// =&gt; 6</span></div><div class="line">add3(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span></div><div class="line">add5(<span class="number">1</span>); <span class="comment">// =&gt; 6</span></div></pre></figure>
 
       </div>
       <footer id="page-footer">
