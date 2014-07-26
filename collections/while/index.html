@@ -87,7 +87,8 @@
 <figure class="highlight js"><pre><div class="line">λ.while(iterator, items);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> whileEven = λ.while(<span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span></div><div class="line">    <span class="keyword">return</span> item % <span class="number">2</span> === <span class="number">0</span>;</div><div class="line">});</div><div class="line"></div><div class="line">whileEven([<span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]); <span class="comment">// =&gt; [2, 4]</span></div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> whileEven = λ.while(<span class="function"><span class="keyword">function</span> <span class="params">(item)</span> </span>{</div><div class="line">    <span class="keyword">return</span> item % <span class="number">2</span> === <span class="number">0</span>;</div><div class="line">});</div><div class="line"></div><div class="line">whileEven([<span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]); <span class="comment">// =&gt; [2, 4]</span></div></pre></figure>
+
 
       </div>
       <footer id="page-footer">

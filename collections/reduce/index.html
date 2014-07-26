@@ -91,7 +91,8 @@
 <figure class="highlight js"><pre><div class="line">λ.reduce(iterator, items);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> multiply = <span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> {</span></div><div class="line">    <span class="keyword">return</span> arg1 * arg2;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">var</span> multiplyReduce = λ.reduce(multiply);</div><div class="line"></div><div class="line">multiplyReduce([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// =&gt; 6</span></div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> multiply = <span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> </span>{</div><div class="line">    <span class="keyword">return</span> arg1 * arg2;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">var</span> multiplyReduce = λ.reduce(multiply);</div><div class="line"></div><div class="line">multiplyReduce([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// =&gt; 6</span></div></pre></figure>
+
 
       </div>
       <footer id="page-footer">

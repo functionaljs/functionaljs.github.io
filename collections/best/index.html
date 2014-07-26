@@ -87,7 +87,8 @@
 <figure class="highlight js"><pre><div class="line">λ.best(iterator, items);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> longest = λ.best(<span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> {</span></div><div class="line">    <span class="keyword">return</span> arg1.length &gt; arg2.length;</div><div class="line">});</div><div class="line"></div><div class="line">longest([<span class="string">"simply"</span>, <span class="string">"the"</span>, <span class="string">"best"</span>]); <span class="comment">// =&gt; "simply"</span></div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> longest = λ.best(<span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> </span>{</div><div class="line">    <span class="keyword">return</span> arg1.length &gt; arg2.length;</div><div class="line">});</div><div class="line"></div><div class="line">longest([<span class="string">"simply"</span>, <span class="string">"the"</span>, <span class="string">"best"</span>]); <span class="comment">// =&gt; "simply"</span></div></pre></figure>
+
 
       </div>
       <footer id="page-footer">
