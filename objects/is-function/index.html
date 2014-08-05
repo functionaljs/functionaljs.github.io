@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>λ.pluck a property | functional.js</title>
+  <title>Object λ.isFunction | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://functionaljs.com/collections/pluck/">
+  <link rel="canonical" href="http://functionaljs.com/objects/is-function/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
@@ -21,15 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="λ.pluck maps / extracts a list of property values from items in an array.">
+  <meta name="description" content="λ.isFunction returns true if the object is a function, otherwise false.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="λ.pluck a property">
-<meta property="og:url" content="http://functionaljs.com/collections/pluck/index.html">
+<meta property="og:title" content="Object λ.isFunction">
+<meta property="og:url" content="http://functionaljs.com/objects/is-function/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="λ.pluck maps / extracts a list of property values from items in an array.">
+<meta property="og:description" content="λ.isFunction returns true if the object is a function, otherwise false.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="λ.pluck a property">
-<meta name="twitter:description" content="λ.pluck maps / extracts a list of property values from items in an array.">
+<meta name="twitter:title" content="Object λ.isFunction">
+<meta name="twitter:description" content="λ.isFunction returns true if the object is a function, otherwise false.">
 <meta name="twitter:site" content="@lee_crossley">
 
   <link rel="stylesheet" href="/css/style.css" type="text/css">
@@ -68,7 +68,7 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">λ.pluck a property</h1>
+        <h1 id="page-title" itemprop="name">Object λ.isFunction</h1>
       </div>
     </div>
   </header>
@@ -77,29 +77,23 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-pluck"><span class="toc-number">1.</span> <span class="toc-text">λ.pluck</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic_example"><span class="toc-number">1.2.</span> <span class="toc-text">Basic example</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-isFunction"><span class="toc-number">1.</span> <span class="toc-text">λ.isFunction</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="λ-pluck">λ.pluck</h2>
-<p>λ.pluck is a special kind of λ.map that extracts a list of property values for a given property name from items in an array.</p>
+        <h2 id="λ-isFunction">λ.isFunction</h2>
+<p>λ.isFunction returns true if the object is a function, otherwise false.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre><div class="line">λ.pluck(propertyName, items);</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">λ.isFunction(obj);</div></pre></figure>
 
-<blockquote class="note info"><strong class="note-title">Implementation note</strong>
-
-<p>It is worth noting that this implementation is the same as λ.map(λ.prop(propertyName), items);</p>
-</blockquote>
-
-
-<h3 id="Basic_example">Basic example</h3>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> items = [{</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"abc"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">123</span></div><div class="line">}, {</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"cab"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">312</span></div><div class="line">},{</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"bca"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">231</span></div><div class="line">}];</div><div class="line"></div><div class="line"><span class="keyword">var</span> pluck1 = λ.pluck(<span class="string">"p1"</span>);</div><div class="line"></div><div class="line">pluck1(items);</div><div class="line"><span class="comment">// =&gt; ["abc", "cab", "bca"]</span></div></pre></figure>
+<h3 id="Example">Example</h3>
+<figure class="highlight js"><pre><div class="line">λ.isFunction(λ.reduce(<span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> </span>{</div><div class="line">    <span class="keyword">return</span> arg1 * arg2;</div><div class="line">})); <span class="comment">// =&gt; true</span></div></pre></figure>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T14:04:14.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
-        <a href="/collections/select-filter/" id="page-footer-prev" title="λ.select">Prev</a><a href="/collections/to-array/" id="page-footer-next" title="λ.toArray">Next</a>
+        <time id="page-footer-updated" datetime="2014-08-05T10:35:12.000Z" itemprop="dateModified">Updated: 5th Aug 2014</time>
+        <a href="/objects/prop/" id="page-footer-prev" title="λ.prop">Prev</a><a href="/existentials/exists/" id="page-footer-next" title="λ.exists">Next</a>
       </footer>
       
     </div>
@@ -137,7 +131,7 @@
     
       <a href="/collections/select-filter/" class="sidebar-link">λ.select</a>
     
-      <a href="/collections/pluck/" class="sidebar-link current">λ.pluck</a>
+      <a href="/collections/pluck/" class="sidebar-link">λ.pluck</a>
     
       <a href="/collections/to-array/" class="sidebar-link">λ.toArray</a>
     
@@ -169,7 +163,7 @@
     
       <a href="/objects/prop/" class="sidebar-link">λ.prop</a>
     
-      <a href="/objects/is-function/" class="sidebar-link">λ.isFunction</a>
+      <a href="/objects/is-function/" class="sidebar-link current">λ.isFunction</a>
     
   
     <strong class="sidebar-title">Existentials</strong>
