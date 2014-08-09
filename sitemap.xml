@@ -1,154 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+  
   <url>
-    <loc>http://functionaljs.com/installation/</loc>
-    <lastmod>2014-08-09T10:02:10.000Z</lastmod>
+    <loc>http://functionaljs.com/collections/map/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
-
+  
   <url>
-    <loc>http://functionaljs.com/objects/is-function/</loc>
-    <lastmod>2014-08-05T10:35:12.000Z</lastmod>
+    <loc>http://functionaljs.com/objects/prop/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
-
+  
+  <url>
+    <loc>http://functionaljs.com/objects/is-array/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/objects/clone/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/basics/arity/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/basics/curry/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/any-contains/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/apply/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/best/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/each/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/every-all/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/first/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/fold/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
   <url>
     <loc>http://functionaljs.com/collections/group/</loc>
-    <lastmod>2014-07-30T06:51:21.000Z</lastmod>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
-
+  
+  <url>
+    <loc>http://functionaljs.com/collections/last/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/objects/assign-extend/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/partition/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/pluck/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/reduce/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/select-filter/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/collections/to-array/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
   <url>
     <loc>http://functionaljs.com/collections/while/</loc>
-    <lastmod>2014-07-23T09:01:39.000Z</lastmod>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
-
+  
+  <url>
+    <loc>http://functionaljs.com/existentials/exists/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/existentials/falsy/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/existentials/truthy/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/functions/compose/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/installation/</loc>
+    <lastmod>2014-08-09T16:05:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/</loc>
+    <lastmod>2014-08-09T16:05:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/objects/is-function/</loc>
+    <lastmod>2014-08-09T16:05:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/README.html</loc>
+    <lastmod>2014-08-02T10:11:50.000Z</lastmod>
+  </url>
+  
   <url>
     <loc>http://functionaljs.com/404.html</loc>
     <lastmod>2014-07-19T16:22:20.000Z</lastmod>
   </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/fold/</loc>
-    <lastmod>2014-06-26T14:42:50.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/reduce/</loc>
-    <lastmod>2014-06-26T14:40:02.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/existentials/falsy/</loc>
-    <lastmod>2014-06-25T15:34:46.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/existentials/truthy/</loc>
-    <lastmod>2014-06-25T15:33:09.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/existentials/exists/</loc>
-    <lastmod>2014-06-25T15:32:58.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/objects/prop/</loc>
-    <lastmod>2014-06-25T15:26:49.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/objects/assign-extend/</loc>
-    <lastmod>2014-06-25T15:13:16.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/objects/is-array/</loc>
-    <lastmod>2014-06-25T15:04:23.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/objects/clone/</loc>
-    <lastmod>2014-06-25T15:01:59.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/functions/compose/</loc>
-    <lastmod>2014-06-25T14:50:10.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/partition/</loc>
-    <lastmod>2014-06-25T14:35:56.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/select-filter/</loc>
-    <lastmod>2014-06-25T14:33:34.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/best/</loc>
-    <lastmod>2014-06-25T14:29:06.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/last/</loc>
-    <lastmod>2014-06-25T14:21:46.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/first/</loc>
-    <lastmod>2014-06-25T14:20:21.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/to-array/</loc>
-    <lastmod>2014-06-25T14:09:05.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/pluck/</loc>
-    <lastmod>2014-06-25T14:04:14.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/apply/</loc>
-    <lastmod>2014-06-25T13:55:03.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/basics/arity/</loc>
-    <lastmod>2014-06-25T12:42:18.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/every-all/</loc>
-    <lastmod>2014-06-25T12:05:42.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/any-contains/</loc>
-    <lastmod>2014-06-25T11:59:18.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/each/</loc>
-    <lastmod>2014-06-25T11:34:58.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/map/</loc>
-    <lastmod>2014-06-25T11:34:50.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/basics/curry/</loc>
-    <lastmod>2014-06-25T10:31:18.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/</loc>
-    <lastmod>2014-06-25T09:25:23.000Z</lastmod>
-  </url>
-
+  
 </urlset>

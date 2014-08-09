@@ -77,7 +77,7 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js"><span class="toc-number">1.</span> <span class="toc-text">Node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">1.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Update"><span class="toc-number">1.2.</span> <span class="toc-text">Update</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Client_side"><span class="toc-number">2.</span> <span class="toc-text">Client side</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Bower"><span class="toc-number">2.1.</span> <span class="toc-text">Bower</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Source_code"><span class="toc-number">3.</span> <span class="toc-text">Source code</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js"><span class="toc-number">1.</span> <span class="toc-text">Node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">1.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Update"><span class="toc-number">1.2.</span> <span class="toc-text">Update</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Client_side"><span class="toc-number">2.</span> <span class="toc-text">Client side</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Direct_include"><span class="toc-number">2.1.</span> <span class="toc-text">Direct include</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bower"><span class="toc-number">2.2.</span> <span class="toc-text">Bower</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Source_code"><span class="toc-number">3.</span> <span class="toc-text">Source code</span></a></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
@@ -87,19 +87,14 @@
 <figure class="highlight bash"><pre><div class="line">npm install functional.js --save</div></pre></figure>
 
 <p>Then to include functional.min.js in your app:</p>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> λ = <span class="built_in">require</span>(<span class="string">"functional.js"</span>);</div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> fjs = <span class="built_in">require</span>(<span class="string">"functional.js"</span>);</div></pre></figure>
 
 <h3 id="Update">Update</h3>
 <figure class="highlight bash"><pre><div class="line">npm update functional.js</div></pre></figure>
 
 <h2 id="Client_side">Client side</h2>
-<p>There is no CDN yet, you should download the latest minified version from <a href="http://bit.ly/funcmin" target="_blank" rel="external">here</a> and host it yourself. Once you reference the js file “λ” will become a global variable.</p>
-<blockquote class="note warn"><strong class="note-title">"λ" character issues</strong>
-
-<p>There are possible issues with using the “λ” character client side. There shouldn’t be, but there are. If you experience issues, there is an alternative client version, functional.min.client.js which uses “lambda” instead of “λ”. Download the minified client version <a href="http://bit.ly/funcclient" target="_blank" rel="external">here</a>, reference the js file and lambda will become a global variable.</p>
-</blockquote>
-
-
+<h3 id="Direct_include">Direct include</h3>
+<p>There is no CDN yet, you should download the latest minified version from <a href="http://bit.ly/funcmin" target="_blank" rel="external">here</a> and host it yourself. Once you reference the js file “fjs” will become a global variable.</p>
 <h3 id="Bower">Bower</h3>
 <figure class="highlight bash"><pre><div class="line">bower install functional.js</div></pre></figure>
 
@@ -110,8 +105,8 @@
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-08-09T10:02:10.000Z" itemprop="dateModified">Updated: 9th Aug 2014</time>
-        <a href="/" id="page-footer-prev" title="Introduction">Prev</a><a href="/basics/curry/" id="page-footer-next" title="λ.curry">Next</a>
+        <time id="page-footer-updated" datetime="2014-08-09T16:05:24.000Z" itemprop="dateModified">Updated: 9th Aug 2014</time>
+        <a href="/" id="page-footer-prev" title="Introduction">Prev</a><a href="/basics/curry/" id="page-footer-next" title="fjs.curry">Next</a>
       </footer>
       
     </div>
@@ -126,71 +121,71 @@
   
     <strong class="sidebar-title">The basics</strong>
     
-      <a href="/basics/curry/" class="sidebar-link">λ.curry</a>
+      <a href="/basics/curry/" class="sidebar-link">fjs.curry</a>
     
       <a href="/basics/arity/" class="sidebar-link">Extending arity</a>
     
   
     <strong class="sidebar-title">Collections</strong>
     
-      <a href="/collections/each/" class="sidebar-link">λ.each</a>
+      <a href="/collections/each/" class="sidebar-link">fjs.each</a>
     
-      <a href="/collections/map/" class="sidebar-link">λ.map</a>
+      <a href="/collections/map/" class="sidebar-link">fjs.map</a>
     
-      <a href="/collections/reduce/" class="sidebar-link">λ.reduce</a>
+      <a href="/collections/reduce/" class="sidebar-link">fjs.reduce</a>
     
-      <a href="/collections/fold/" class="sidebar-link">λ.fold</a>
+      <a href="/collections/fold/" class="sidebar-link">fjs.fold</a>
     
-      <a href="/collections/apply/" class="sidebar-link">λ.apply</a>
+      <a href="/collections/apply/" class="sidebar-link">fjs.apply</a>
     
-      <a href="/collections/every-all/" class="sidebar-link">λ.every</a>
+      <a href="/collections/every-all/" class="sidebar-link">fjs.every</a>
     
-      <a href="/collections/any-contains/" class="sidebar-link">λ.any</a>
+      <a href="/collections/any-contains/" class="sidebar-link">fjs.any</a>
     
-      <a href="/collections/select-filter/" class="sidebar-link">λ.select</a>
+      <a href="/collections/select-filter/" class="sidebar-link">fjs.select</a>
     
-      <a href="/collections/pluck/" class="sidebar-link">λ.pluck</a>
+      <a href="/collections/pluck/" class="sidebar-link">fjs.pluck</a>
     
-      <a href="/collections/to-array/" class="sidebar-link">λ.toArray</a>
+      <a href="/collections/to-array/" class="sidebar-link">fjs.toArray</a>
     
-      <a href="/collections/first/" class="sidebar-link">λ.first</a>
+      <a href="/collections/first/" class="sidebar-link">fjs.first</a>
     
-      <a href="/collections/last/" class="sidebar-link">λ.last</a>
+      <a href="/collections/last/" class="sidebar-link">fjs.last</a>
     
-      <a href="/collections/best/" class="sidebar-link">λ.best</a>
+      <a href="/collections/best/" class="sidebar-link">fjs.best</a>
     
-      <a href="/collections/partition/" class="sidebar-link">λ.partition</a>
+      <a href="/collections/partition/" class="sidebar-link">fjs.partition</a>
     
-      <a href="/collections/group/" class="sidebar-link">λ.group</a>
+      <a href="/collections/group/" class="sidebar-link">fjs.group</a>
     
-      <a href="/collections/while/" class="sidebar-link">λ.while</a>
+      <a href="/collections/while/" class="sidebar-link">fjs.while</a>
     
   
     <strong class="sidebar-title">Functions</strong>
     
-      <a href="/functions/compose/" class="sidebar-link">λ.compose</a>
+      <a href="/functions/compose/" class="sidebar-link">fjs.compose</a>
     
   
     <strong class="sidebar-title">Objects</strong>
     
-      <a href="/objects/clone/" class="sidebar-link">λ.clone</a>
+      <a href="/objects/clone/" class="sidebar-link">fjs.clone</a>
     
-      <a href="/objects/is-array/" class="sidebar-link">λ.isArray</a>
+      <a href="/objects/is-array/" class="sidebar-link">fjs.isArray</a>
     
-      <a href="/objects/assign-extend/" class="sidebar-link">λ.assign</a>
+      <a href="/objects/assign-extend/" class="sidebar-link">fjs.assign</a>
     
-      <a href="/objects/prop/" class="sidebar-link">λ.prop</a>
+      <a href="/objects/prop/" class="sidebar-link">fjs.prop</a>
     
-      <a href="/objects/is-function/" class="sidebar-link">λ.isFunction</a>
+      <a href="/objects/is-function/" class="sidebar-link">fjs.isFunction</a>
     
   
     <strong class="sidebar-title">Existentials</strong>
     
-      <a href="/existentials/exists/" class="sidebar-link">λ.exists</a>
+      <a href="/existentials/exists/" class="sidebar-link">fjs.exists</a>
     
-      <a href="/existentials/truthy/" class="sidebar-link">λ.truthy</a>
+      <a href="/existentials/truthy/" class="sidebar-link">fjs.truthy</a>
     
-      <a href="/existentials/falsy/" class="sidebar-link">λ.falsy</a>
+      <a href="/existentials/falsy/" class="sidebar-link">fjs.falsy</a>
     
   
 </aside>

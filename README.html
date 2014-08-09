@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Map array items with fjs.map | functional.js</title>
+  <title>functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://functionaljs.com/collections/map/">
+  <link rel="canonical" href="http://functionaljs.com/README.html">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
@@ -21,15 +21,31 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="fjs.map allows iteration over a list of items, applying an iterator function to each and returns a new array with the yielded values.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Map array items with fjs.map">
-<meta property="og:url" content="http://functionaljs.com/collections/map/index.html">
+  <meta name="description" content="functional.js docs
+
+Markdown documentation for functional.js.
+Documentation is available to view at: functionaljs.com.
+File layout
+title: [Page title]description: [Page description]---[Markdown conten">
+<meta property="og:type" content="website">
+<meta property="og:title" content="functional.js">
+<meta property="og:url" content="http://functionaljs.com/README.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="fjs.map allows iteration over a list of items, applying an iterator function to each and returns a new array with the yielded values.">
+<meta property="og:description" content="functional.js docs
+
+Markdown documentation for functional.js.
+Documentation is available to view at: functionaljs.com.
+File layout
+title: [Page title]description: [Page description]---[Markdown conten">
+<meta property="og:image" content="http://functionaljs.com/css/images/logo@2x.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Map array items with fjs.map">
-<meta name="twitter:description" content="fjs.map allows iteration over a list of items, applying an iterator function to each and returns a new array with the yielded values.">
+<meta name="twitter:title" content="functional.js">
+<meta name="twitter:description" content="functional.js docs
+
+Markdown documentation for functional.js.
+Documentation is available to view at: functionaljs.com.
+File layout
+title: [Page title]description: [Page description]---[Markdown conten">
 <meta name="twitter:site" content="@lee_crossley">
 
   <link rel="stylesheet" href="/css/style.css" type="text/css">
@@ -68,7 +84,7 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Map array items with fjs.map</h1>
+        <h1 id="page-title" itemprop="name"></h1>
       </div>
     </div>
   </header>
@@ -77,24 +93,24 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#fjs-map"><span class="toc-number">1.</span> <span class="toc-text">fjs.map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#functional-js_docs"><span class="toc-number">1.</span> <span class="toc-text">functional.js docs</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#File_layout"><span class="toc-number">1.1.</span> <span class="toc-text">File layout</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Directory_structure"><span class="toc-number">1.2.</span> <span class="toc-text">Directory structure</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="fjs-map">fjs.map</h2>
-<p>fjs.map allows iteration over a list of items, applying an iterator function to each and returning a new array with the yielded values. This is similar to the native map function available in modern browsers but uses its own implementation that utilises fjs.curry by default.</p>
-<h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre><div class="line">fjs.map(iterator, items);</div></pre></figure>
+        <h1 id="functional-js_docs">functional.js docs</h1>
+<p><img align="right" src="http://functionaljs.com/css/images/logo@2x.png"></p>
+<p><strong>Markdown documentation for <a href="https://github.com/leecrossley/functional-js" target="_blank" rel="external">functional.js</a></strong>.</p>
+<p>Documentation is available to view at: <a href="http://functionaljs.com/" target="_blank" rel="external">functionaljs.com</a>.</p>
+<h2 id="File_layout">File layout</h2>
+<figure class="highlight"><pre><div class="line"><span class="tag">title</span>: <span class="attr_selector">[Page title]</span></div><div class="line"><span class="tag">description</span>: <span class="attr_selector">[Page description]</span></div><div class="line"><span class="tag">---</span></div><div class="line"></div><div class="line"><span class="attr_selector">[Markdown content]</span></div></pre></figure>
 
-<h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> items = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line"></div><div class="line"><span class="keyword">var</span> doubleUp = <span class="function"><span class="keyword">function</span> <span class="params">(number)</span> </span>{</div><div class="line">    <span class="keyword">return</span> number * <span class="number">2</span>;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">var</span> doubleMap = fjs.map(doubleUp);</div><div class="line"></div><div class="line">doubleMap(items);</div><div class="line"><span class="comment">// =&gt; [2, 4, 6];</span></div></pre></figure>
-
-<p>“doubleUp” is the iterator function applied to each item in the list (“items” array). “doubleMap” is a higher order function created by partially invoking “doubleUp”.</p>
+<h2 id="Directory_structure">Directory structure</h2>
+<p><code>/basics/curry/index.md</code> will be served as <a href="http://functionaljs.com/basics/curry/" target="_blank" rel="external">http://functionaljs.com/basics/curry/</a> (<a href="http://functionaljs.com/basics/curry/index.html" target="_blank" rel="external">http://functionaljs.com/basics/curry/index.html</a>)</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-08-09T16:05:25.000Z" itemprop="dateModified">Updated: 9th Aug 2014</time>
-        <a href="/collections/each/" id="page-footer-prev" title="fjs.each">Prev</a><a href="/collections/reduce/" id="page-footer-next" title="fjs.reduce">Next</a>
+        <time id="page-footer-updated" datetime="2014-08-02T10:11:50.000Z" itemprop="dateModified">Updated: 2nd Aug 2014</time>
+        <a href="/" id="page-footer-next" title="Introduction">Next</a>
       </footer>
       
     </div>
@@ -118,7 +134,7 @@
     
       <a href="/collections/each/" class="sidebar-link">fjs.each</a>
     
-      <a href="/collections/map/" class="sidebar-link current">fjs.map</a>
+      <a href="/collections/map/" class="sidebar-link">fjs.map</a>
     
       <a href="/collections/reduce/" class="sidebar-link">fjs.reduce</a>
     

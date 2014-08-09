@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Function currying with λ.curry | functional.js</title>
+  <title>Function currying with fjs.curry | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://functionaljs.com/basics/curry/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
@@ -23,12 +23,12 @@
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
   <meta name="description" content="Examples of currying JavaScript functions to create higher order functions for reuse.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Function currying with λ.curry">
+<meta property="og:title" content="Function currying with fjs.curry">
 <meta property="og:url" content="http://functionaljs.com/basics/curry/index.html">
 <meta property="og:site_name" content="functional.js">
 <meta property="og:description" content="Examples of currying JavaScript functions to create higher order functions for reuse.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Function currying with λ.curry">
+<meta name="twitter:title" content="Function currying with fjs.curry">
 <meta name="twitter:description" content="Examples of currying JavaScript functions to create higher order functions for reuse.">
 <meta name="twitter:site" content="@lee_crossley">
 
@@ -68,7 +68,7 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Function currying with λ.curry</h1>
+        <h1 id="page-title" itemprop="name">Function currying with fjs.curry</h1>
       </div>
     </div>
   </header>
@@ -82,18 +82,18 @@
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="Currying">Currying</h2>
-<p>λ.curry allows you to easily higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.</p>
+<p>fjs.curry allows you to easily higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.</p>
 <h3 id="Basic_example">Basic example</h3>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> concatenate = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(word1, word2)</span> </span>{</div><div class="line">    <span class="keyword">return</span> word1 + <span class="string">" "</span> + word2;</div><div class="line">});</div><div class="line"></div><div class="line"><span class="keyword">var</span> concatenateHello = concatenate(<span class="string">"Hello"</span>);</div><div class="line"></div><div class="line">concatenateHello(<span class="string">"World"</span>);</div><div class="line"><span class="comment">// =&gt; "Hello World"</span></div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> concatenate = fjs.curry(<span class="function"><span class="keyword">function</span><span class="params">(word1, word2)</span> </span>{</div><div class="line">    <span class="keyword">return</span> word1 + <span class="string">" "</span> + word2;</div><div class="line">});</div><div class="line"></div><div class="line"><span class="keyword">var</span> concatenateHello = concatenate(<span class="string">"Hello"</span>);</div><div class="line"></div><div class="line">concatenateHello(<span class="string">"World"</span>);</div><div class="line"><span class="comment">// =&gt; "Hello World"</span></div></pre></figure>
 
 <p>The “concatenateHello” function is a higher order function created by partially invoking the “concatenate” function with the first argument. “concatenateHello” can then be reused.</p>
 <h3 id="Another_example">Another example</h3>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> add = λ.curry(<span class="function"><span class="keyword">function</span><span class="params">(arg1, arg2, arg3)</span> </span>{</div><div class="line">    <span class="keyword">return</span> arg1 + arg2 + arg3;</div><div class="line">});</div><div class="line"></div><div class="line"><span class="keyword">var</span> add3 = add(<span class="number">3</span>);</div><div class="line"><span class="keyword">var</span> add5 = add3(<span class="number">2</span>);</div><div class="line"></div><div class="line">add(<span class="number">3</span>)(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span></div><div class="line">add3(<span class="number">2</span>, <span class="number">1</span>); <span class="comment">// =&gt; 6</span></div><div class="line">add3(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span></div><div class="line">add5(<span class="number">1</span>); <span class="comment">// =&gt; 6</span></div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> add = fjs.curry(<span class="function"><span class="keyword">function</span><span class="params">(arg1, arg2, arg3)</span> </span>{</div><div class="line">    <span class="keyword">return</span> arg1 + arg2 + arg3;</div><div class="line">});</div><div class="line"></div><div class="line"><span class="keyword">var</span> add3 = add(<span class="number">3</span>);</div><div class="line"><span class="keyword">var</span> add5 = add3(<span class="number">2</span>);</div><div class="line"></div><div class="line">add(<span class="number">3</span>)(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span></div><div class="line">add3(<span class="number">2</span>, <span class="number">1</span>); <span class="comment">// =&gt; 6</span></div><div class="line">add3(<span class="number">2</span>)(<span class="number">1</span>); <span class="comment">// =&gt; 6</span></div><div class="line">add5(<span class="number">1</span>); <span class="comment">// =&gt; 6</span></div></pre></figure>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T10:31:18.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
+        <time id="page-footer-updated" datetime="2014-08-09T16:05:25.000Z" itemprop="dateModified">Updated: 9th Aug 2014</time>
         <a href="/installation/" id="page-footer-prev" title="Installation">Prev</a><a href="/basics/arity/" id="page-footer-next" title="Extending arity">Next</a>
       </footer>
       
@@ -109,71 +109,71 @@
   
     <strong class="sidebar-title">The basics</strong>
     
-      <a href="/basics/curry/" class="sidebar-link current">λ.curry</a>
+      <a href="/basics/curry/" class="sidebar-link current">fjs.curry</a>
     
       <a href="/basics/arity/" class="sidebar-link">Extending arity</a>
     
   
     <strong class="sidebar-title">Collections</strong>
     
-      <a href="/collections/each/" class="sidebar-link">λ.each</a>
+      <a href="/collections/each/" class="sidebar-link">fjs.each</a>
     
-      <a href="/collections/map/" class="sidebar-link">λ.map</a>
+      <a href="/collections/map/" class="sidebar-link">fjs.map</a>
     
-      <a href="/collections/reduce/" class="sidebar-link">λ.reduce</a>
+      <a href="/collections/reduce/" class="sidebar-link">fjs.reduce</a>
     
-      <a href="/collections/fold/" class="sidebar-link">λ.fold</a>
+      <a href="/collections/fold/" class="sidebar-link">fjs.fold</a>
     
-      <a href="/collections/apply/" class="sidebar-link">λ.apply</a>
+      <a href="/collections/apply/" class="sidebar-link">fjs.apply</a>
     
-      <a href="/collections/every-all/" class="sidebar-link">λ.every</a>
+      <a href="/collections/every-all/" class="sidebar-link">fjs.every</a>
     
-      <a href="/collections/any-contains/" class="sidebar-link">λ.any</a>
+      <a href="/collections/any-contains/" class="sidebar-link">fjs.any</a>
     
-      <a href="/collections/select-filter/" class="sidebar-link">λ.select</a>
+      <a href="/collections/select-filter/" class="sidebar-link">fjs.select</a>
     
-      <a href="/collections/pluck/" class="sidebar-link">λ.pluck</a>
+      <a href="/collections/pluck/" class="sidebar-link">fjs.pluck</a>
     
-      <a href="/collections/to-array/" class="sidebar-link">λ.toArray</a>
+      <a href="/collections/to-array/" class="sidebar-link">fjs.toArray</a>
     
-      <a href="/collections/first/" class="sidebar-link">λ.first</a>
+      <a href="/collections/first/" class="sidebar-link">fjs.first</a>
     
-      <a href="/collections/last/" class="sidebar-link">λ.last</a>
+      <a href="/collections/last/" class="sidebar-link">fjs.last</a>
     
-      <a href="/collections/best/" class="sidebar-link">λ.best</a>
+      <a href="/collections/best/" class="sidebar-link">fjs.best</a>
     
-      <a href="/collections/partition/" class="sidebar-link">λ.partition</a>
+      <a href="/collections/partition/" class="sidebar-link">fjs.partition</a>
     
-      <a href="/collections/group/" class="sidebar-link">λ.group</a>
+      <a href="/collections/group/" class="sidebar-link">fjs.group</a>
     
-      <a href="/collections/while/" class="sidebar-link">λ.while</a>
+      <a href="/collections/while/" class="sidebar-link">fjs.while</a>
     
   
     <strong class="sidebar-title">Functions</strong>
     
-      <a href="/functions/compose/" class="sidebar-link">λ.compose</a>
+      <a href="/functions/compose/" class="sidebar-link">fjs.compose</a>
     
   
     <strong class="sidebar-title">Objects</strong>
     
-      <a href="/objects/clone/" class="sidebar-link">λ.clone</a>
+      <a href="/objects/clone/" class="sidebar-link">fjs.clone</a>
     
-      <a href="/objects/is-array/" class="sidebar-link">λ.isArray</a>
+      <a href="/objects/is-array/" class="sidebar-link">fjs.isArray</a>
     
-      <a href="/objects/assign-extend/" class="sidebar-link">λ.assign</a>
+      <a href="/objects/assign-extend/" class="sidebar-link">fjs.assign</a>
     
-      <a href="/objects/prop/" class="sidebar-link">λ.prop</a>
+      <a href="/objects/prop/" class="sidebar-link">fjs.prop</a>
     
-      <a href="/objects/is-function/" class="sidebar-link">λ.isFunction</a>
+      <a href="/objects/is-function/" class="sidebar-link">fjs.isFunction</a>
     
   
     <strong class="sidebar-title">Existentials</strong>
     
-      <a href="/existentials/exists/" class="sidebar-link">λ.exists</a>
+      <a href="/existentials/exists/" class="sidebar-link">fjs.exists</a>
     
-      <a href="/existentials/truthy/" class="sidebar-link">λ.truthy</a>
+      <a href="/existentials/truthy/" class="sidebar-link">fjs.truthy</a>
     
-      <a href="/existentials/falsy/" class="sidebar-link">λ.falsy</a>
+      <a href="/existentials/falsy/" class="sidebar-link">fjs.falsy</a>
     
   
 </aside>

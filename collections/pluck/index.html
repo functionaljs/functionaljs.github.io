@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>λ.pluck a property | functional.js</title>
+  <title>fjs.pluck a property | functional.js</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://functionaljs.com/collections/pluck/">
   <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
@@ -21,15 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="λ.pluck maps / extracts a list of property values from items in an array.">
+  <meta name="description" content="fjs.pluck maps / extracts a list of property values from items in an array.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="λ.pluck a property">
+<meta property="og:title" content="fjs.pluck a property">
 <meta property="og:url" content="http://functionaljs.com/collections/pluck/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="λ.pluck maps / extracts a list of property values from items in an array.">
+<meta property="og:description" content="fjs.pluck maps / extracts a list of property values from items in an array.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="λ.pluck a property">
-<meta name="twitter:description" content="λ.pluck maps / extracts a list of property values from items in an array.">
+<meta name="twitter:title" content="fjs.pluck a property">
+<meta name="twitter:description" content="fjs.pluck maps / extracts a list of property values from items in an array.">
 <meta name="twitter:site" content="@lee_crossley">
 
   <link rel="stylesheet" href="/css/style.css" type="text/css">
@@ -68,7 +68,7 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">λ.pluck a property</h1>
+        <h1 id="page-title" itemprop="name">fjs.pluck a property</h1>
       </div>
     </div>
   </header>
@@ -77,29 +77,29 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#λ-pluck"><span class="toc-number">1.</span> <span class="toc-text">λ.pluck</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic_example"><span class="toc-number">1.2.</span> <span class="toc-text">Basic example</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#fjs-pluck"><span class="toc-number">1.</span> <span class="toc-text">fjs.pluck</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic_example"><span class="toc-number">1.2.</span> <span class="toc-text">Basic example</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="λ-pluck">λ.pluck</h2>
-<p>λ.pluck is a special kind of λ.map that extracts a list of property values for a given property name from items in an array.</p>
+        <h2 id="fjs-pluck">fjs.pluck</h2>
+<p>fjs.pluck is a special kind of fjs.map that extracts a list of property values for a given property name from items in an array.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre><div class="line">λ.pluck(propertyName, items);</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">fjs.pluck(propertyName, items);</div></pre></figure>
 
 <blockquote class="note info"><strong class="note-title">Implementation note</strong>
 
-<p>It is worth noting that this implementation is the same as λ.map(λ.prop(propertyName), items);</p>
+<p>It is worth noting that this implementation is the same as fjs.map(fjs.prop(propertyName), items);</p>
 </blockquote>
 
 
 <h3 id="Basic_example">Basic example</h3>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> items = [{</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"abc"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">123</span></div><div class="line">}, {</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"cab"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">312</span></div><div class="line">},{</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"bca"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">231</span></div><div class="line">}];</div><div class="line"></div><div class="line"><span class="keyword">var</span> pluck1 = λ.pluck(<span class="string">"p1"</span>);</div><div class="line"></div><div class="line">pluck1(items);</div><div class="line"><span class="comment">// =&gt; ["abc", "cab", "bca"]</span></div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> items = [{</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"abc"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">123</span></div><div class="line">}, {</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"cab"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">312</span></div><div class="line">},{</div><div class="line">    <span class="string">"p1"</span>: <span class="string">"bca"</span>,</div><div class="line">    <span class="string">"p2"</span>: <span class="number">231</span></div><div class="line">}];</div><div class="line"></div><div class="line"><span class="keyword">var</span> pluck1 = fjs.pluck(<span class="string">"p1"</span>);</div><div class="line"></div><div class="line">pluck1(items);</div><div class="line"><span class="comment">// =&gt; ["abc", "cab", "bca"]</span></div></pre></figure>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-25T14:04:14.000Z" itemprop="dateModified">Updated: 25th Jun 2014</time>
-        <a href="/collections/select-filter/" id="page-footer-prev" title="λ.select">Prev</a><a href="/collections/to-array/" id="page-footer-next" title="λ.toArray">Next</a>
+        <time id="page-footer-updated" datetime="2014-08-09T16:05:25.000Z" itemprop="dateModified">Updated: 9th Aug 2014</time>
+        <a href="/collections/select-filter/" id="page-footer-prev" title="fjs.select">Prev</a><a href="/collections/to-array/" id="page-footer-next" title="fjs.toArray">Next</a>
       </footer>
       
     </div>
@@ -114,71 +114,71 @@
   
     <strong class="sidebar-title">The basics</strong>
     
-      <a href="/basics/curry/" class="sidebar-link">λ.curry</a>
+      <a href="/basics/curry/" class="sidebar-link">fjs.curry</a>
     
       <a href="/basics/arity/" class="sidebar-link">Extending arity</a>
     
   
     <strong class="sidebar-title">Collections</strong>
     
-      <a href="/collections/each/" class="sidebar-link">λ.each</a>
+      <a href="/collections/each/" class="sidebar-link">fjs.each</a>
     
-      <a href="/collections/map/" class="sidebar-link">λ.map</a>
+      <a href="/collections/map/" class="sidebar-link">fjs.map</a>
     
-      <a href="/collections/reduce/" class="sidebar-link">λ.reduce</a>
+      <a href="/collections/reduce/" class="sidebar-link">fjs.reduce</a>
     
-      <a href="/collections/fold/" class="sidebar-link">λ.fold</a>
+      <a href="/collections/fold/" class="sidebar-link">fjs.fold</a>
     
-      <a href="/collections/apply/" class="sidebar-link">λ.apply</a>
+      <a href="/collections/apply/" class="sidebar-link">fjs.apply</a>
     
-      <a href="/collections/every-all/" class="sidebar-link">λ.every</a>
+      <a href="/collections/every-all/" class="sidebar-link">fjs.every</a>
     
-      <a href="/collections/any-contains/" class="sidebar-link">λ.any</a>
+      <a href="/collections/any-contains/" class="sidebar-link">fjs.any</a>
     
-      <a href="/collections/select-filter/" class="sidebar-link">λ.select</a>
+      <a href="/collections/select-filter/" class="sidebar-link">fjs.select</a>
     
-      <a href="/collections/pluck/" class="sidebar-link current">λ.pluck</a>
+      <a href="/collections/pluck/" class="sidebar-link current">fjs.pluck</a>
     
-      <a href="/collections/to-array/" class="sidebar-link">λ.toArray</a>
+      <a href="/collections/to-array/" class="sidebar-link">fjs.toArray</a>
     
-      <a href="/collections/first/" class="sidebar-link">λ.first</a>
+      <a href="/collections/first/" class="sidebar-link">fjs.first</a>
     
-      <a href="/collections/last/" class="sidebar-link">λ.last</a>
+      <a href="/collections/last/" class="sidebar-link">fjs.last</a>
     
-      <a href="/collections/best/" class="sidebar-link">λ.best</a>
+      <a href="/collections/best/" class="sidebar-link">fjs.best</a>
     
-      <a href="/collections/partition/" class="sidebar-link">λ.partition</a>
+      <a href="/collections/partition/" class="sidebar-link">fjs.partition</a>
     
-      <a href="/collections/group/" class="sidebar-link">λ.group</a>
+      <a href="/collections/group/" class="sidebar-link">fjs.group</a>
     
-      <a href="/collections/while/" class="sidebar-link">λ.while</a>
+      <a href="/collections/while/" class="sidebar-link">fjs.while</a>
     
   
     <strong class="sidebar-title">Functions</strong>
     
-      <a href="/functions/compose/" class="sidebar-link">λ.compose</a>
+      <a href="/functions/compose/" class="sidebar-link">fjs.compose</a>
     
   
     <strong class="sidebar-title">Objects</strong>
     
-      <a href="/objects/clone/" class="sidebar-link">λ.clone</a>
+      <a href="/objects/clone/" class="sidebar-link">fjs.clone</a>
     
-      <a href="/objects/is-array/" class="sidebar-link">λ.isArray</a>
+      <a href="/objects/is-array/" class="sidebar-link">fjs.isArray</a>
     
-      <a href="/objects/assign-extend/" class="sidebar-link">λ.assign</a>
+      <a href="/objects/assign-extend/" class="sidebar-link">fjs.assign</a>
     
-      <a href="/objects/prop/" class="sidebar-link">λ.prop</a>
+      <a href="/objects/prop/" class="sidebar-link">fjs.prop</a>
     
-      <a href="/objects/is-function/" class="sidebar-link">λ.isFunction</a>
+      <a href="/objects/is-function/" class="sidebar-link">fjs.isFunction</a>
     
   
     <strong class="sidebar-title">Existentials</strong>
     
-      <a href="/existentials/exists/" class="sidebar-link">λ.exists</a>
+      <a href="/existentials/exists/" class="sidebar-link">fjs.exists</a>
     
-      <a href="/existentials/truthy/" class="sidebar-link">λ.truthy</a>
+      <a href="/existentials/truthy/" class="sidebar-link">fjs.truthy</a>
     
-      <a href="/existentials/falsy/" class="sidebar-link">λ.falsy</a>
+      <a href="/existentials/falsy/" class="sidebar-link">fjs.falsy</a>
     
   
 </aside>
