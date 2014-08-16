@@ -2,22 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://functionaljs.com/objects/is-string/</loc>
-    <lastmod>2014-08-16T09:34:53.000Z</lastmod>
+    <loc>http://functionaljs.com/objects/is-array/</loc>
+    <lastmod>2014-08-16T09:37:03.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://functionaljs.com/objects/is-function/</loc>
-    <lastmod>2014-08-16T09:33:52.000Z</lastmod>
+    <lastmod>2014-08-16T09:36:59.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/objects/is-array/</loc>
-    <lastmod>2014-08-16T09:33:51.000Z</lastmod>
+    <loc>http://functionaljs.com/objects/is-string/</loc>
+    <lastmod>2014-08-16T09:36:57.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/collections/map/</loc>
+    <loc>http://functionaljs.com/collections/partition/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/basics/arity/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/basics/curry/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -27,7 +37,7 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/basics/arity/</loc>
+    <loc>http://functionaljs.com/collections/apply/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -42,27 +52,7 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/objects/assign-extend/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://functionaljs.com/collections/every-all/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://functionaljs.com/collections/apply/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://functionaljs.com/collections/fold/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://functionaljs.com/collections/last/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -72,17 +62,27 @@
   </url>
   
   <url>
+    <loc>http://functionaljs.com/collections/fold/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/collections/group/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/collections/partition/</loc>
+    <loc>http://functionaljs.com/collections/last/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/functions/compose/</loc>
+    <loc>http://functionaljs.com/collections/map/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/objects/prop/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -97,17 +97,22 @@
   </url>
   
   <url>
+    <loc>http://functionaljs.com/collections/select-filter/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://functionaljs.com/collections/to-array/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/existentials/exists/</loc>
+    <loc>http://functionaljs.com/collections/while/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/collections/while/</loc>
+    <loc>http://functionaljs.com/existentials/exists/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -122,12 +127,12 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/objects/prop/</loc>
+    <loc>http://functionaljs.com/functions/compose/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/collections/select-filter/</loc>
+    <loc>http://functionaljs.com/objects/assign-extend/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -137,17 +142,12 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/basics/curry/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://functionaljs.com/</loc>
+    <loc>http://functionaljs.com/installation/</loc>
     <lastmod>2014-08-09T16:05:24.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/installation/</loc>
+    <loc>http://functionaljs.com/</loc>
     <lastmod>2014-08-09T16:05:24.000Z</lastmod>
   </url>
   
