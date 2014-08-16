@@ -21,15 +21,15 @@
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#50b6a9">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="description" content="fjs.isArray returns true if the object is an array, otherwise false.">
+  <meta name="description" content="fjs.isArray returns true if the argument is an array, otherwise false.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Object fjs.isArray">
 <meta property="og:url" content="http://functionaljs.com/objects/is-array/index.html">
 <meta property="og:site_name" content="functional.js">
-<meta property="og:description" content="fjs.isArray returns true if the object is an array, otherwise false.">
+<meta property="og:description" content="fjs.isArray returns true if the argument is an array, otherwise false.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Object fjs.isArray">
-<meta name="twitter:description" content="fjs.isArray returns true if the object is an array, otherwise false.">
+<meta name="twitter:description" content="fjs.isArray returns true if the argument is an array, otherwise false.">
 <meta name="twitter:site" content="@lee_crossley">
 
   <link rel="stylesheet" href="/css/style.css" type="text/css">
@@ -82,9 +82,9 @@
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="fjs-isArray">fjs.isArray</h2>
-<p>fjs.isArray returns true if the object is an array, otherwise false.</p>
+<p>fjs.isArray returns true if the argument is an array, otherwise false.</p>
 <h3 id="Usage">Usage</h3>
-<figure class="highlight js"><pre><div class="line">fjs.isArray(obj);</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">fjs.isArray(arg);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
 <figure class="highlight js"><pre><div class="line">fjs.isArray([<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]); <span class="comment">// =&gt; true</span></div><div class="line">fjs.isArray({ <span class="string">"a"</span>: <span class="string">"b"</span> }); <span class="comment">// =&gt; false</span></div></pre></figure>
@@ -92,8 +92,8 @@
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-08-09T16:05:25.000Z" itemprop="dateModified">Updated: 9th Aug 2014</time>
-        <a href="/objects/clone/" id="page-footer-prev" title="clone">Prev</a><a href="/objects/assign-extend/" id="page-footer-next" title="assign">Next</a>
+        <time id="page-footer-updated" datetime="2014-08-16T09:33:51.000Z" itemprop="dateModified">Updated: 16th Aug 2014</time>
+        <a href="/objects/prop/" id="page-footer-prev" title="prop">Prev</a><a href="/objects/is-function/" id="page-footer-next" title="isFunction">Next</a>
       </footer>
       
     </div>
@@ -157,13 +157,15 @@
     
       <a href="/objects/clone/" class="sidebar-link">clone</a>
     
-      <a href="/objects/is-array/" class="sidebar-link current">isArray</a>
-    
       <a href="/objects/assign-extend/" class="sidebar-link">assign</a>
     
       <a href="/objects/prop/" class="sidebar-link">prop</a>
     
+      <a href="/objects/is-array/" class="sidebar-link current">isArray</a>
+    
       <a href="/objects/is-function/" class="sidebar-link">isFunction</a>
+    
+      <a href="/objects/is-string/" class="sidebar-link">isString</a>
     
   
     <strong class="sidebar-title">Existentials</strong>
