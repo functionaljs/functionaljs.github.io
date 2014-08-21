@@ -17,7 +17,7 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/collections/partition/</loc>
+    <loc>http://functionaljs.com/objects/prop/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -27,12 +27,12 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/basics/curry/</loc>
+    <loc>http://functionaljs.com/collections/any-contains/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/collections/any-contains/</loc>
+    <loc>http://functionaljs.com/basics/curry/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -67,11 +67,6 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/collections/group/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://functionaljs.com/collections/last/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
@@ -82,7 +77,12 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/objects/prop/</loc>
+    <loc>http://functionaljs.com/collections/group/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://functionaljs.com/objects/clone/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -117,12 +117,12 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/existentials/falsy/</loc>
+    <loc>http://functionaljs.com/existentials/truthy/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/existentials/truthy/</loc>
+    <loc>http://functionaljs.com/existentials/falsy/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
@@ -137,17 +137,17 @@
   </url>
   
   <url>
-    <loc>http://functionaljs.com/objects/clone/</loc>
+    <loc>http://functionaljs.com/collections/partition/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/installation/</loc>
+    <loc>http://functionaljs.com/</loc>
     <lastmod>2014-08-09T16:05:24.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://functionaljs.com/</loc>
+    <loc>http://functionaljs.com/installation/</loc>
     <lastmod>2014-08-09T16:05:24.000Z</lastmod>
   </url>
   
