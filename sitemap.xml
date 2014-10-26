@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>http://functionaljs.com/basics/lambda/</loc>
+    <lastmod>2014-10-26T17:45:19.000Z</lastmod>
+  </url>
+
+  <url>
     <loc>http://functionaljs.com/objects/is-array/</loc>
     <lastmod>2014-08-16T09:37:03.000Z</lastmod>
   </url>
@@ -17,22 +22,22 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/objects/prop/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/basics/arity/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/any-contains/</loc>
+    <loc>http://functionaljs.com/collections/map/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
     <loc>http://functionaljs.com/basics/curry/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/objects/prop/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/collections/any-contains/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -67,22 +72,22 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/last/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/map/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
     <loc>http://functionaljs.com/collections/group/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/objects/clone/</loc>
+    <loc>http://functionaljs.com/collections/last/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/basics/arity/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/collections/partition/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -117,12 +122,12 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/existentials/truthy/</loc>
+    <loc>http://functionaljs.com/existentials/falsy/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/existentials/falsy/</loc>
+    <loc>http://functionaljs.com/existentials/truthy/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -137,13 +142,8 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/partition/</loc>
+    <loc>http://functionaljs.com/objects/clone/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/</loc>
-    <lastmod>2014-08-09T16:05:24.000Z</lastmod>
   </url>
 
   <url>
@@ -152,8 +152,8 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/404.html</loc>
-    <lastmod>2014-07-19T16:22:20.000Z</lastmod>
+    <loc>http://functionaljs.com/</loc>
+    <lastmod>2014-08-09T16:05:24.000Z</lastmod>
   </url>
 
 </urlset>
