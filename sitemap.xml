@@ -3,7 +3,7 @@
 
   <url>
     <loc>http://functionaljs.com/collections/nub-unique/</loc>
-    <lastmod>2015-01-18T13:03:32.000Z</lastmod>
+    <lastmod>2015-01-18T13:08:38.000Z</lastmod>
   </url>
 
   <url>
@@ -87,7 +87,7 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/objects/clone/</loc>
+    <loc>http://functionaljs.com/basics/arity/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -102,12 +102,12 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/select-filter/</loc>
+    <loc>http://functionaljs.com/collections/reduce/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/reduce/</loc>
+    <loc>http://functionaljs.com/collections/select-filter/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -147,7 +147,7 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/basics/arity/</loc>
+    <loc>http://functionaljs.com/objects/clone/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
