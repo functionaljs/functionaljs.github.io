@@ -82,7 +82,7 @@
       
       <div class="page-entry" itemprop="articleBody">
         <h2 id="Currying">Currying</h2>
-<p>fjs.curry allows you to easily higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.</p>
+<p>fjs.curry allows you to easily create higher order functions by partially invoking an existing function, without supplying all the arguments of the original function.</p>
 <h3 id="Basic_example">Basic example</h3>
 <figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> concatenate = fjs.curry(<span class="function"><span class="keyword">function</span><span class="params">(word1, word2)</span> </span>{</div><div class="line">    <span class="keyword">return</span> word1 + <span class="string">" "</span> + word2;</div><div class="line">});</div><div class="line"></div><div class="line"><span class="keyword">var</span> concatenateHello = concatenate(<span class="string">"Hello"</span>);</div><div class="line"></div><div class="line">concatenateHello(<span class="string">"World"</span>);</div><div class="line"><span class="comment">// =&gt; "Hello World"</span></div></pre></figure>
 
@@ -93,7 +93,7 @@
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-08-09T16:05:25.000Z" itemprop="dateModified">Updated: 9th Aug 2014</time>
+        <time id="page-footer-updated" datetime="2015-01-21T07:20:43.000Z" itemprop="dateModified">Updated: 21st Jan 2015</time>
         <a href="/installation/" id="page-footer-prev" title="Installation">Prev</a><a href="/basics/arity/" id="page-footer-next" title="arity">Next</a>
       </footer>
       
