@@ -77,7 +77,7 @@
       
       <div class="toc-wrap">
         <strong class="toc-title">Jump to</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#fjs-nub"><span class="toc-number">1.</span> <span class="toc-text">fjs.nub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#fjs-nub"><span class="toc-number">1.</span> <span class="toc-text">fjs.nub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">1.1.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Another_Example"><span class="toc-number">1.3.</span> <span class="toc-text">Another Example</span></a></li></ol></li></ol>
       </div>
       
       <div class="page-entry" itemprop="articleBody">
@@ -86,17 +86,21 @@
 <li><em>Alias:</em> fjs.unique</li>
 <li><em>Alias:</em> fjs.distinct</li>
 </ul>
-<p>fjs.nub removes duplicate elements from a list and returns a new array containing only unique elements, specifically the first of each duplicate element found in the list. Function takes a comparator that determines equality (uniqueness) and the list to run the function against. Can be curried by default.</p>
+<p>fjs.nub removes duplicate elements from a list and returns a new array containing only the unique elements. fjs.nub takes an iterator function and a list to apply the iterator to. The iterator function takes two given elements from the list and determines if they are the same, and therefore unique, or not.  Can be curried by default.</p>
 <h3 id="Usage">Usage</h3>
 <figure class="highlight js"><pre><div class="line">fjs.nub(comparator, items);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
 <figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> unique = fjs.nub(<span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> </span>{</div><div class="line">    <span class="keyword">return</span> arg1 === arg2;</div><div class="line">});</div><div class="line"></div><div class="line">unique([<span class="string">"John"</span>, <span class="string">"Jane"</span>, <span class="string">"Jane"</span>, <span class="string">"Jane"</span>, <span class="string">"Joe"</span>, <span class="string">"John"</span>]);</div><div class="line"><span class="comment">// =&gt; ["John", "Jane", "Joe"]</span></div></pre></figure>
 
+<p>fjs.nub returns only the first unique element found in a list. This behavior is more apparent when applied to a list of more complex objects. Care should be taken when using this function for very large lists, as fjs.nub is at worst O(n^2) for lists containing only unique elements.</p>
+<h3 id="Another_Example">Another Example</h3>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> unique = fjs.nub(<span class="function"><span class="keyword">function</span> <span class="params">(arg1, arg2)</span> </span>{</div><div class="line">	<span class="keyword">return</span> arg1.valueA === arg2.valueA;</div><div class="line">});</div><div class="line"></div><div class="line">unique([{valueA: <span class="number">1</span>, valueB: <span class="number">2</span>},{valueA: <span class="number">2</span>, valueB: <span class="number">3</span>},{valueA: <span class="number">1</span>, valueB: <span class="number">3</span>},{valueA: <span class="number">1</span>, valueB: <span class="number">4</span>}]);</div><div class="line"><span class="comment">// =&gt; [{valueA: 1, valueB: 2},{valueA: 2, valueB: 3}];</span></div></pre></figure>
+
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-18T13:08:38.000Z" itemprop="dateModified">Updated: 18th Jan 2015</time>
+        <time id="page-footer-updated" datetime="2015-01-24T13:13:51.000Z" itemprop="dateModified">Updated: 24th Jan 2015</time>
         <a href="/collections/while/" id="page-footer-prev" title="while">Prev</a><a href="/functions/compose/" id="page-footer-next" title="compose">Next</a>
       </footer>
       
