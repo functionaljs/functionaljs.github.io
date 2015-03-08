@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>http://functionaljs.com/collections/first/</loc>
+    <lastmod>2015-03-08T16:59:19.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/collections/rest/</loc>
+    <lastmod>2015-03-08T16:57:58.000Z</lastmod>
+  </url>
+
+  <url>
     <loc>http://functionaljs.com/collections/nub-unique/</loc>
     <lastmod>2015-01-24T13:13:51.000Z</lastmod>
   </url>
@@ -37,12 +47,12 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/best/</loc>
+    <loc>http://functionaljs.com/collections/to-array/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/each/</loc>
+    <loc>http://functionaljs.com/collections/best/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -52,7 +62,7 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/first/</loc>
+    <loc>http://functionaljs.com/collections/apply/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -77,12 +87,12 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/partition/</loc>
+    <loc>http://functionaljs.com/basics/arity/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/any-contains/</loc>
+    <loc>http://functionaljs.com/collections/partition/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -97,12 +107,17 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/select-filter/</loc>
+    <loc>http://functionaljs.com/collections/any-contains/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/to-array/</loc>
+    <loc>http://functionaljs.com/collections/each/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/collections/select-filter/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -138,16 +153,6 @@
 
   <url>
     <loc>http://functionaljs.com/objects/clone/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/apply/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/basics/arity/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
