@@ -47,12 +47,12 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/to-array/</loc>
+    <loc>http://functionaljs.com/collections/best/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/best/</loc>
+    <loc>http://functionaljs.com/collections/each/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -62,7 +62,7 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/apply/</loc>
+    <loc>http://functionaljs.com/collections/last/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -77,12 +77,12 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/last/</loc>
+    <loc>http://functionaljs.com/collections/map/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/map/</loc>
+    <loc>http://functionaljs.com/collections/any-contains/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -97,27 +97,27 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/pluck/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
     <loc>http://functionaljs.com/collections/reduce/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/any-contains/</loc>
+    <loc>http://functionaljs.com/collections/pluck/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/each/</loc>
+    <loc>http://functionaljs.com/objects/clone/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
     <loc>http://functionaljs.com/collections/select-filter/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/collections/to-array/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -132,12 +132,12 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/existentials/falsy/</loc>
+    <loc>http://functionaljs.com/existentials/truthy/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/existentials/truthy/</loc>
+    <loc>http://functionaljs.com/existentials/falsy/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -152,10 +152,10 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/objects/clone/</loc>
+    <loc>http://functionaljs.com/collections/apply/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
-
+  
   <url>
     <loc>http://functionaljs.com/installation/</loc>
     <lastmod>2014-08-09T16:05:24.000Z</lastmod>
