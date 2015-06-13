@@ -52,22 +52,27 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/basics/arity/</loc>
+    <loc>http://functionaljs.com/collections/select-filter/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/reduce/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/every-all/</loc>
+    <loc>http://functionaljs.com/collections/best/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
     <loc>http://functionaljs.com/collections/fold/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/collections/apply/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/collections/map/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -82,17 +87,12 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/map/</loc>
+    <loc>http://functionaljs.com/basics/arity/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/apply/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/partition/</loc>
+    <loc>http://functionaljs.com/collections/reduce/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -102,27 +102,27 @@
   </url>
 
   <url>
+    <loc>http://functionaljs.com/collections/partition/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
     <loc>http://functionaljs.com/collections/any-contains/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
-    <loc>http://functionaljs.com/collections/best/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/select-filter/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/collections/to-array/</loc>
+    <loc>http://functionaljs.com/collections/every-all/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
     <loc>http://functionaljs.com/collections/while/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/collections/to-array/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -137,17 +137,17 @@
   </url>
 
   <url>
-    <loc>http://functionaljs.com/existentials/truthy/</loc>
-    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
-  </url>
-
-  <url>
     <loc>http://functionaljs.com/functions/compose/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
   <url>
     <loc>http://functionaljs.com/objects/assign-extend/</loc>
+    <lastmod>2014-08-09T16:05:25.000Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://functionaljs.com/existentials/truthy/</loc>
     <lastmod>2014-08-09T16:05:25.000Z</lastmod>
   </url>
 
@@ -164,11 +164,6 @@
   <url>
     <loc>http://functionaljs.com/installation/</loc>
     <lastmod>2014-08-09T16:05:24.000Z</lastmod>
-  </url>
-
-  <url>
-    <loc>http://functionaljs.com/404.html</loc>
-    <lastmod>2014-07-19T16:22:20.000Z</lastmod>
   </url>
 
 </urlset>
